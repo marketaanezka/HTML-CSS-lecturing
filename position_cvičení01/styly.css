@@ -1,0 +1,30 @@
+body {
+  font: 16px/1.5 sans-serif;
+}
+
+.modal {
+  width: 50vw;
+  height: 40vh;
+  border: 15px solid #5bcef3;
+  background-color: #b4eafb;
+  border-radius: 10px;
+  font-size: 30px;
+}
+
+button {
+  width: 80px;
+  height: 25px;
+}
+
+.exit {
+  color: black;
+  width: 30px;
+  border-radius: 3px;
+}
+
+.ok {
+  background-color: #28a745;
+  color: white;
+}
+
+/* sem přijdou tvoje styly */

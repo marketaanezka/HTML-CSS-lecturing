@@ -1,0 +1,27 @@
+/* tady toho si nevšímám :) */
+.relative:before {
+    content: "Tady bych byl normálně, ale nejsem! Muhaha...";
+    position: absolute;
+    top: -80px;
+    left: -150px;
+    width: 300px;
+    height: 200px;
+    outline: 3px dashed red;
+    color: red;
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* --------------------- */
+
+
+.relative {
+    position: relative;
+    top: 80px;
+    left: 150px;
+}
+
+
+
+
+
