@@ -1,0 +1,10 @@
+/*
+Tady nic není, jen tenhle hloupý komentář.
+
+Všechny HTML prvky totiž mají nastaveno
+postition: static; jako výchozí hodnotu.
+
+Znamená to, že "nejsou pozicovány" a na stránce
+leží tam, kde na ně v toku dokumentu vyšlo
+místo.
+*/

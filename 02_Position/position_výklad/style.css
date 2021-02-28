@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff0d5;
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+  font-family: monospace;
+  font-size: 20px;
+  color: white;
+}
+
+.div-static,
+.div-fixed,
+.div-relative,
+.div-sticky,
+.div-absolute {
+  padding: 20px;
+  width: 250px;
+  height: 250px;
+}
+
+.div-static {
+  background-color: #389c31;
+}
+
+.div-relative {
+  background-color: #03a5ad;
+}
+
+.div-fixed {
+  background-color: #d87116;
+}
+.div-sticky {
+  background-color: #e83a3d;
+}
+.div-absolute {
+  background-color: #d6b70d;
+}
+/* positioning in css */
+
+.div-static {
+  position: static;
+  top: 30px;
+  left: 80px;
+}
+.div-relative {
+  position: relative;
+  bottom: 30px;
+  left: 100px;
+}
+.div-fixed {
+  position: fixed;
+  bottom: 0;
+  left: 550px;
+}
+.div-sticky {
+  position: sticky;
+  bottom: 0;
+  left: 50px;
+}
+
+.div-absolute {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+}
+
+section {
+  width: 500px;
+  height: 500px;
+  border: 2px solid gold;
+  background-color: lightyellow;
+  position: relative;
+}
