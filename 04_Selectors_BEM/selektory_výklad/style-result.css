@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+.contact-list {
+  background-color: #cfe1e7;
+  padding: 5px;
+  border-radius: 10px;
+  font-family: monospace;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  background-color: #f3f3f3;
+  padding: 20px;
+  width: 400px;
+
+  display: flex;
+}
+.photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #6995a959;
+}
+
+.info {
+  margin-left: 20px;
+  flex-grow: 2;
+}
+.info p {
+  font-size: 22px;
+}
+
+.buttons {
+  padding: 0 10px 0 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.call,
+.message {
+  width: 30px;
+}
+
+/* ---------- */
+
+main > h1 {
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+section:nth-child(2n) {
+  background-color: white;
+}
+
+div + div {
+  border-left: 1px solid #6995a959;
+}
+
+/*-----------------*/
+
+.recent > .photo {
+  border: 4px solid pink;
+}

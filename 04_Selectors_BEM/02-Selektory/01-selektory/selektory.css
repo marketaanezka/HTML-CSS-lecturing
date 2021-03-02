@@ -1,0 +1,38 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+html { box-sizing: border-box; }
+*, :after, :before { box-sizing: inherit; }
+
+body {
+	font: 16px/1.5 sans-serif;
+}
+
+.box {
+	padding: 20px;
+	margin: 30px 0;
+	border: 1px solid blue;
+	background-color: lightcyan;
+}
+
+.vnitrek {
+	padding: 20px;
+	border: 1px solid green;
+	background-color: yellow;
+}
+
+
+/*************************************************/
+
+/*
+CSS Selektory:
+
+element1 element2			element2 uvnitř elementu1 (nemusí být přímý rodič)
+element1>element2		  element2, jehož přímý rodič je element1
+
+element1+element2		  element2, který následuje okamžitě za elementem1
+element1~element2     element2, kterému předchází element1
+
+element[attr="val"]		element s attributem o určité hodnotě
+						*= kdekoliv v textu
+						^= na začátku
+						$= na konci
+*/

@@ -1,0 +1,17 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+*, :after, :before { box-sizing: border-box; }
+
+body {
+	font-family: sans-serif;
+}
+
+.recept {
+	max-width: 400px;
+}
+
+/* ---------------------------------------------------- */
+
+
+.recept {
+	background-color: #f5a5f5;
+}
