@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./default-style.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -23,10 +24,12 @@
       <section>
         <header>
           <h2>Element < Class < Id < Inline style</h2>
-          <code>div { background-color: lightgreen; }</code>
-          <code>.blogpost { background-color: lightblue; }</code>
-          <code>#new { background-color: lightsalmon; }</code>
-          <code> &lt;div style="color:lightyellow;&gt;content&lt;div&gt </code>
+          <pre><code>
+div { background-color: lightgreen; }
+.blogpost { background-color: lightblue; }
+#new { background-color: lightsalmon; }
+&lt;div style="color:lightyellow;&gt;content&lt;div&gt
+            </code></pre>
         </header>
         <article>
           <div class="blogpost" id="new">
@@ -70,10 +73,15 @@
       <section>
         <header>
           <h2>Each selector has its specificity</h2>
-          <code>div - 1</code>
-          <code>.blogpost - 10 </code>
-          <code>#new - 100 </code>
-          <code> &lt;div style="color:lightyellow;&gt; - 1000</code>
+          <pre>
+            <code>
+div - 1
+.blogpost - 10
+#new - 100
+style="color:lightyellow - 1000
+!important
+            </code>
+          </pre>
         </header>
         <article>
           <img src="./img/specific.png" alt="specificity" />

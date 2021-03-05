@@ -1,0 +1,84 @@
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #2c3e66;
+  background-color: #ececf6;
+}
+
+.lesson-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 42px;
+  margin: 0;
+  padding: 16px 0;
+  border-bottom: 1px solid #2c3e66;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 0 120px;
+}
+h1 {
+  align-self: flex-start;
+}
+section {
+  border-radius: 15px;
+  box-shadow: 0 0 15px #5a5a6b6b;
+  margin-bottom: 120px;
+}
+
+header {
+  padding: 16px;
+  background-color: #23285d;
+  color: #ececf6;
+  border-radius: 15px 15px 0 0;
+}
+
+h2 {
+  margin-top: 8px;
+  letter-spacing: 0.7px;
+  text-align: center;
+}
+
+pre {
+  align-self: flex-start;
+}
+code {
+  font-size: 18px;
+  padding: 5px 10px;
+}
+
+article {
+  padding: 16px;
+  background-color: #f9f9f9;
+  border-radius: 0 0 15px 15px;
+}
+
+div {
+  background-color: #f5f5fd;
+  border: 1px solid #dedef5;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.inline-element {
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 2px solid #d8d8f1;
+}
+
+pre {
+}

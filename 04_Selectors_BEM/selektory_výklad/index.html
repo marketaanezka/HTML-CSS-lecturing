@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./default-style.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -23,7 +24,11 @@
       <section>
         <header>
           <h2>Selector list</h2>
-          <code class="code">div, p { background-color: turquoise; }</code>
+          <pre>
+            <code>
+              div, p { background-color: turquoise; }
+            </code>
+          </pre>
         </header>
         <article>
           <p>
@@ -53,7 +58,9 @@
       <section>
         <header>
           <h2>Descendant selector</h2>
-          <code class="code"> div p { background-color: yellow; } </code>
+          <pre><code > 
+            div p { background-color: yellow; } 
+          </code></pre>
         </header>
         <article>
           <p>
@@ -82,7 +89,9 @@
       <section>
         <header>
           <h2>Child selector</h2>
-          <code class="code"> div > p { background-color: green; } </code>
+          <pre><code > 
+            div > p { background-color: green; } 
+          </code></pre>
         </header>
         <article>
           <p>
@@ -111,7 +120,9 @@
       <section>
         <header>
           <h2>Adjacent sibling selector</h2>
-          <code class="code"> div + p { background-color: blue; } </code>
+          <pre><code > 
+            div + p { background-color: blue; } 
+          </code></pre>
         </header>
         <article>
           <p>
@@ -140,7 +151,9 @@
       <section>
         <header>
           <h2>General Sibling selector</h2>
-          <code class="code"> div ~ p { background-color: tomato; } </code>
+          <pre><code > 
+            div ~ p { background-color: tomato; } 
+          </code></pre>
         </header>
         <article>
           <p>
@@ -176,10 +189,12 @@
       <section>
         <header>
           <h2>:link, :visited, :hover, :active</h2>
-          <code class="code"> a:link { text-decoration:none; } </code>
-          <code> a:visited { color:#ee9a00; } </code>
-          <code> a:hover { color:#00ff00; } </code>
-          <code> a:active { color:#ee9a00; } </code>
+          <pre><code > 
+            a:link { text-decoration:none; }  
+            a:visited { color:#ee9a00; }  
+            a:hover { color:#00ff00; }  
+            a:active { color:#ee9a00; } 
+          </code></pre>
         </header>
         <article class="pseudoclasses">
           <p>
@@ -199,9 +214,11 @@
       <section>
         <header>
           <h2>:nth-child() selector</h2>
-          <code class="code">
-            div:nth-child(3) { background-color: hotpink; }
-          </code>
+          <pre>
+            <code >
+              div:nth-child(3) { background-color: hotpink; }
+            </code>
+          </pre>
         </header>
         <article>
           <p>
@@ -253,19 +270,15 @@
       <section>
         <header>
           <h2>:nth-child() selector</h2>
-          <code class="code">
-            div:nth-child(2n) { background-color: forestgreen; }
-          </code>
-          <br />
-          <code class="code">
-            div:nth-child(3n + 1) { background-color: aquamarine; }
-          </code>
-          <code class="code">
-            div:nth-child(3n + 2) { background-color: gold; }
-          </code>
-          <code class="code">
-            div:nth-child(3n + 3) { background-color: fuchsia; }
-          </code>
+          <pre>
+            <code >
+              div:nth-child(2n) { background-color: forestgreen; }
+
+              div:nth-child(3n + 1) { background-color: aquamarine; }
+              div:nth-child(3n + 2) { background-color: gold; }
+              div:nth-child(3n + 3) { background-color: fuchsia; }
+            </code>
+          </pre>
         </header>
         <article>
           <div>
@@ -319,10 +332,12 @@
       <section>
         <header>
           <h2>Multiple class/ID and class selector</h2>
-          <code class="code"> .blogpost#new { border: 2px solid blue; } </code>
-          <code class="code">
-            .blogpost.saved { background-color: lightblue }
-          </code>
+          <pre>
+            <code >
+              .blogpost#new { border: 2px solid blue; }
+              .blogpost.saved { background-color: lightblue }
+            </code>
+          </pre>
         </header>
         <article>
           <div class="blogpost" id="new">
@@ -367,23 +382,27 @@
       <section>
         <header class="checkout-also">
           <h2>:nth-of-type() selector</h2>
-          <code class="code"> p:nth-of-type(2) { background: red; } </code>
+          <pre><code > p:nth-of-type(2) { background: red; } </code></pre>
           <br />
           <h2>:first-of-type selector</h2>
-          <code class="code"> p:first-of-type { background: coral; } </code>
+          <pre><code > p:first-of-type { background: coral; } </code></pre>
           <br />
           <h2>:last-of-type selector</h2>
-          <code class="code"> p:last-of-type { background: cyan; } </code>
+          <pre><code > p:last-of-type { background: cyan; } </code></pre>
           <br />
           <h2>:only-of-type selector</h2>
-          <code class="code">
-            p:only-of-type { background: cornflowerblue; }
-          </code>
+          <pre>
+            <code >
+              p:only-of-type { background: cornflowerblue; }
+            </code>
+          </pre>
           <br />
           <h2>:not() selector</h2>
-          <code class="code">
-            div:not(.blogpost) { background: darkorange; }
-          </code>
+          <pre>
+            <code >
+              div:not(.blogpost) { background: darkorange; }
+            </code>
+          </pre>
         </header>
       </section>
     </main>
