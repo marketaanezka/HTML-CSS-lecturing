@@ -72,6 +72,10 @@ div {
   margin: 10px 0;
 }
 
+img {
+  width: 100%;
+}
+
 .blogpost {
   position: relative;
 }
@@ -97,10 +101,15 @@ div {
   top: 5px;
 }
 
-.checkout-also {
-  border-radius: 20px;
-  align-items: flex-start;
-  padding-left: 42px;
+/* ---------- */
+div {
+  background-color: lightgreen;
 }
 
-/* ---------- */
+.blogpost {
+  background-color: lightblue;
+}
+
+#new {
+  background-color: lightyellow;
+}

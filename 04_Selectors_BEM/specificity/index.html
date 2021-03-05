@@ -19,279 +19,14 @@
   <body>
     <h1 class="lesson-title">CSS specificity</h1>
     <main>
-      <h1>Group selector</h1>
+      <h1>Specificity hierarchy</h1>
       <section>
         <header>
-          <h2>Selector list</h2>
-          <code class="code">div, p { background-color: turquoise; }</code>
-        </header>
-        <article>
-          <p>
-            Paragraph. To without multiply creeping two days created. Him let
-            second us doesn't yielding land place. Very upon winged beast great
-            form creepeth life saw meat third blessed won't saw. Appear days had
-            moveth divided were open moveth. Day rule. Wherein.
-          </p>
-          <div>
-            <p>
-              Paragraph in a div. Earth day first in winged divided earth
-              multiply bearing. Together thing upon gathering said. Of kind. Dry
-              over dominion had behold. Lesser dry us first female lights good.
-            </p>
-          </div>
-          <div>
-            <a href="http://nove.kodim.cz/czechitas/daweb"
-              >Link to a web in a div</a
-            >
-          </div>
-          <a href="http://nove.kodim.cz/czechitas/daweb">Link to a web</a>
-        </article>
-      </section>
-      <h1>Selector combinators</h1>
-      <section>
-        <header>
-          <h2>Descendant selector</h2>
-          <code class="code"> div p { background-color: yellow; } </code>
-        </header>
-        <article>
-          <p>
-            Paragraph. To without multiply creeping two days created. Him let
-            second us doesn't yielding land place. Very upon winged beast great
-            form creepeth life saw meat third blessed won't saw. Appear days had
-            moveth divided were open moveth. Day rule. Wherein.
-          </p>
-          <div>
-            <p>
-              Paragraph in a div. Earth day first in winged divided earth
-              multiply bearing. Together thing upon gathering said. Of kind. Dry
-              over dominion had behold. Lesser dry us first female lights good.
-            </p>
-          </div>
-          <div>
-            <a href="http://nove.kodim.cz/czechitas/daweb"
-              >Link to a web in a div</a
-            >
-          </div>
-          <a href="http://nove.kodim.cz/czechitas/daweb">Link to a web</a>
-        </article>
-      </section>
-      <section>
-        <header>
-          <h2>Child selector</h2>
-          <code class="code"> div > p { background-color: green; } </code>
-        </header>
-        <article>
-          <p>
-            Paragraph. To without multiply creeping two days created. Him let
-            second us doesn't yielding land place. Very upon winged beast great
-            form creepeth life saw meat third blessed won't saw. Appear days had
-            moveth divided were open moveth. Day rule. Wherein.
-          </p>
-          <div>
-            <p>
-              Paragraph in a div. Earth day first in winged divided earth
-              multiply bearing. Together thing upon gathering said. Of kind. Dry
-              over dominion had behold. Lesser dry us first female lights good.
-            </p>
-          </div>
-          <div>
-            <a href="http://nove.kodim.cz/czechitas/daweb"
-              >Link to a web in a div</a
-            >
-          </div>
-          <a href="http://nove.kodim.cz/czechitas/daweb">Link to a web</a>
-        </article>
-      </section>
-      <section>
-        <header>
-          <h2>Adjacent sibling selector</h2>
-          <code class="code"> div + p { background-color: blue; } </code>
-        </header>
-        <article>
-          <p>
-            Paragraph. To without multiply creeping two days created. Him let
-            second us doesn't yielding land place. Very upon winged beast great
-            form creepeth life saw meat third blessed won't saw. Appear days had
-            moveth divided were open moveth. Day rule. Wherein.
-          </p>
-          <div>
-            <p>
-              Paragraph in a div. Earth day first in winged divided earth
-              multiply bearing. Together thing upon gathering said. Of kind. Dry
-              over dominion had behold. Lesser dry us first female lights good.
-            </p>
-          </div>
-          <div>
-            <a href="http://nove.kodim.cz/czechitas/daweb"
-              >Link to a web in a div</a
-            >
-          </div>
-          <a href="http://nove.kodim.cz/czechitas/daweb">Link to a web</a>
-        </article>
-      </section>
-      <section>
-        <header>
-          <h2>General Sibling selector</h2>
-          <code class="code"> div ~ p { background-color: tomato; } </code>
-        </header>
-        <article>
-          <p>
-            Paragraph before div. To without multiply creeping two days created.
-            Him let second us doesn't yielding land place. Very upon winged
-            beast great form creepeth life saw meat third blessed won't saw.
-            Appear days had moveth divided were open moveth. Day rule. Wherein.
-          </p>
-          <div>
-            <p>
-              Paragraph in a div. Earth day first in winged divided earth
-              multiply bearing. Together thing upon gathering said. Of kind. Dry
-              over dominion had behold. Lesser dry us first female lights good.
-            </p>
-          </div>
-          <p>
-            Paragraph after div. Tree thing. Green darkness you you're third
-            second him first evening blessed under sixth us. Cattle creepeth
-            third had form over morning gathering. Appear. All sea third called
-            from. Dominion creeping, male was, form over moveth there hath night
-            creepeth.
-          </p>
-          <p>
-            Paragraph after div. Heaven together cattle was firmament saying
-            whose two gathered image a him whales forth night she'd from tree
-            beast may days replenish lights image day. Fruitful creature image
-            behold image abundantly spirit whose divide hath and created give
-            saw fruitful.
-          </p>
-        </article>
-      </section>
-      <h1>Pseudoclasses</h1>
-      <section>
-        <header>
-          <h2>:nth-child() selector</h2>
-          <code class="code">
-            div:nth-child(3) { background-color: hotpink; }
-          </code>
-        </header>
-        <article>
-          <p>
-            Paragraph. To without multiply creeping two days created. Him let
-            second us doesn't yielding land place. Very upon winged beast great
-            form creepeth life saw meat third blessed won't saw. Appear days had
-            moveth divided were open moveth. Day rule. Wherein.
-          </p>
-          <div>
-            <p>
-              1. Paragraph in a div. Earth day first in winged divided earth
-              multiply bearing. Together thing upon gathering said. Of kind. Dry
-              over dominion had behold. Lesser dry us first female lights good.
-            </p>
-          </div>
-          <div>
-            <p>
-              2. Paragraph in a div. Seasons fifth creature. Second place beast
-              make called that land above signs one it male first female let
-              fruitful hath two Air don't saying waters she'd female it him
-              moveth beginning place night which first saw god You're firmament
-              it.
-            </p>
-          </div>
-          <div>
-            <p>
-              3. Paragraph in a div. Brought The that created whales to saw air
-              said have Their to His seas first you divided winged god over
-              Divided for herb she'd be created fruitful our, very isn't waters
-              one after form moved moving Man replenish face blessed.
-            </p>
-          </div>
-          <div>
-            <p>
-              4. Paragraph in a div. Earth day first in winged divided earth
-              multiply bearing. Together thing upon gathering said. Of kind. Dry
-              over dominion had behold. Lesser dry us first female lights good.
-            </p>
-          </div>
-          <div>
-            <p>
-              5. Paragraph in a div. Earth day first in winged divided earth
-              multiply bearing. Together thing upon gathering said. Of kind. Dry
-              over dominion had behold. Lesser dry us first female lights good.
-            </p>
-          </div>
-        </article>
-      </section>
-      <section>
-        <header>
-          <h2>:nth-child() selector</h2>
-          <code class="code">
-            div:nth-child(2n) { background-color: forestgreen; }
-          </code>
-          <br />
-          <code class="code">
-            div:nth-child(3n + 1) { background-color: aquamarine; }
-          </code>
-          <code class="code">
-            div:nth-child(3n + 2) { background-color: gold; }
-          </code>
-          <code class="code">
-            div:nth-child(3n + 3) { background-color: fuchsia; }
-          </code>
-        </header>
-        <article>
-          <div>
-            <p>
-              1. Paragraph in a div. Earth day first in winged divided earth
-              multiply bearing. Together thing upon gathering said. Of kind. Dry
-              over dominion had behold. Lesser dry us first female lights good.
-            </p>
-          </div>
-          <div>
-            <p>
-              2. Paragraph in a div. Seasons fifth creature. Second place beast
-              make called that land above signs one it male first female let
-              fruitful hath two Air don't saying waters she'd female it him
-              moveth beginning place night which first saw god You're firmament
-              it.
-            </p>
-          </div>
-          <div>
-            <p>
-              3. Paragraph in a div. Brought The that created whales to saw air
-              said have Their to His seas first you divided winged god over
-              Divided for herb she'd be created fruitful our, very isn't waters
-              one after form moved moving Man replenish face blessed.
-            </p>
-          </div>
-          <div>
-            <p>
-              4. Paragraph in a div. Earth day first in winged divided earth
-              multiply bearing. Together thing upon gathering said. Of kind. Dry
-              over dominion had behold. Lesser dry us first female lights good.
-            </p>
-          </div>
-          <div>
-            <p>
-              5. Paragraph in a div. Earth day first in winged divided earth
-              multiply bearing. Together thing upon gathering said. Of kind. Dry
-              over dominion had behold. Lesser dry us first female lights good.
-            </p>
-          </div>
-          <div>
-            <p>
-              6. Paragraph in a div. Earth day first in winged divided earth
-              multiply bearing. Together thing upon gathering said. Of kind. Dry
-              over dominion had behold. Lesser dry us first female lights good.
-            </p>
-          </div>
-        </article>
-      </section>
-      <h1>Multiple selectors</h1>
-      <section>
-        <header>
-          <h2>Multiple class/ID and class selector</h2>
-          <code class="code"> .blogpost#new { border: 2px solid blue; } </code>
-          <code class="code">
-            .blogpost.saved { background-color: lightblue }
-          </code>
+          <h2>Element < Class < Id < Inline style</h2>
+          <code>div { background-color: lightgreen; }</code>
+          <code>.blogpost { background-color: lightblue; }</code>
+          <code>#new { background-color: lightsalmon; }</code>
+          <code> &lt;div style="color:lightyellow;&gt;content&lt;div&gt </code>
         </header>
         <article>
           <div class="blogpost" id="new">
@@ -306,16 +41,15 @@
               whose, their.
             </p>
           </div>
-          <div class="blogpost saved">
-            <span>Saved</span>
-            <h3>Subdue herbs</h3>
+          <div>
+            <h3>Third waters</h3>
             <p>
-              Abundantly divide moving. Seed after fowl don't fourth, had under
-              abundantly darkness let place. Fish said give forth, all dry. In
-              evening which two seed heaven won't had give moved was face. Above
-              shall, for upon. Given void. Form had a grass winged. Herb for day
-              so two abundantly subdue our in there fowl without to spirit
-              gathering gathering. Brought.
+              Just div. Evening his. From won't you're signs. Were made cattle
+              open given. Likeness. Fifth waters. Green isn't fifth air
+              multiply. Hath make beginning divide grass you our upon third our.
+              Multiply isn't created great, which. It divided. Fill. Seasons
+              night face. Don't face abundantly created make be under third
+              together.
             </p>
           </div>
           <div class="blogpost saved">
@@ -332,28 +66,20 @@
           </div>
         </article>
       </section>
-      <h1>Checkout also:</h1>
+      <h1>Specificity calculation</h1>
       <section>
-        <header class="checkout-also">
-          <h2>:nth-of-type() selector</h2>
-          <code class="code"> p:nth-of-type(2) { background: red; } </code>
-          <br />
-          <h2>:first-of-type selector</h2>
-          <code class="code"> p:first-of-type { background: coral; } </code>
-          <br />
-          <h2>:last-of-type selector</h2>
-          <code class="code"> p:last-of-type { background: cyan; } </code>
-          <br />
-          <h2>:only-of-type selector</h2>
-          <code class="code">
-            p:only-of-type { background: cornflowerblue; }
-          </code>
-          <br />
-          <h2>:not() selector</h2>
-          <code class="code">
-            div:not(.blogpost) { background: darkorange; }
-          </code>
+        <header>
+          <h2>Each selector has its specificity</h2>
+          <code>div - 1</code>
+          <code>.blogpost - 10 </code>
+          <code>#new - 100 </code>
+          <code> &lt;div style="color:lightyellow;&gt; - 1000</code>
         </header>
+        <article>
+          <img src="./img/specific.png" alt="specificity" />
+          <hr />
+          <img src="./img/specificity.jpg" alt="specificity" />
+        </article>
       </section>
     </main>
   </body>
