@@ -80,5 +80,14 @@ div {
   border: 2px solid #d8d8f1;
 }
 
-pre {
+.position {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
+
+.div-absolute-parent {
+  width: 100px;
+  height: 100px;
+  background-color: #d2c4e4;
 }

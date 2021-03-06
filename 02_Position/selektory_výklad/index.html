@@ -20,7 +20,7 @@
   <body>
     <h1 class="lesson-title">CSS positions</h1>
     <main>
-      <h1>Group selector</h1>
+      <h1>Display</h1>
       <section>
         <header>
           <h2>Normal flow</h2>
@@ -54,7 +54,7 @@
           <code class="inline-element">.code { box-sizing: border-box; }</code>
         </article>
       </section>
-      <h1>Selector combinators</h1>
+      <h1>Positioning</h1>
       <section>
         <header>
           <h2>Css position</h2>
@@ -68,7 +68,79 @@
             }
           </code></pre>
         </header>
-        <article></article>
+        <article>
+          <div class="position">I am a div</div>
+        </article>
+      </section>
+      <section>
+        <header>
+          <h2>Static</h2>
+          <pre><code>
+            div: {              
+              position: static
+            }
+          </code></pre>
+        </header>
+        <article>
+          <div class="position div-static">static</div>
+        </article>
+      </section>
+      <section>
+        <header>
+          <h2>Relative</h2>
+          <pre><code>
+            div: {              
+              position: relative
+            }
+          </code></pre>
+        </header>
+        <article>
+          <div class="position div-relative">static</div>
+        </article>
+      </section>
+      <section>
+        <header>
+          <h2>Absolute</h2>
+          <pre><code>
+            div: {              
+              position: absolute
+            }
+          </code></pre>
+        </header>
+        <article>
+          <div class="position div-absolute-page">absolute to page</div>
+          <div class="position">
+            parent
+            <div class="div-absolute-parent">absolute to parent</div>
+          </div>
+        </article>
+        s
+      </section>
+      <section>
+        <header>
+          <h2>Fixed</h2>
+          <pre><code>
+            div: {              
+              position: fixed
+            }
+          </code></pre>
+        </header>
+        <article>
+          <div class="position div-fixed">fixed</div>
+        </article>
+      </section>
+      <section>
+        <header>
+          <h2>Sticky</h2>
+          <pre><code>
+            div: {              
+              position: sticky
+            }
+          </code></pre>
+        </header>
+        <article>
+          <div class="position div-sticky">sticky</div>
+        </article>
       </section>
     </main>
   </body>
