@@ -2,18 +2,261 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>CSS Position</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./default-style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="div-static">position: static</div>
-    <div class="div-relative">position: relative</div>
-    <div class="div-fixed">position: fixed</div>
-    <div class="div-sticky">position: sticky</div>
-    <section>
-      <div class="div-absolute">position: absolute</div>
-    </section>
+    <h1 class="lesson-title">CSS positions</h1>
+    <main>
+      <h1>Display</h1>
+      <section>
+        <header>
+          <h2>Normal flow</h2>
+          <pre><code>
+            div, p, h1, footer { display: block; }
+            a, span, img, code { display: inline; }
+          </code></pre>
+        </header>
+        <article>
+          <h1>Heading</h1>
+          <p>
+            Paragraph. To without multiply creeping two days created. Him let
+            second us doesn't yielding land place. Very upon winged beast great
+            form creepeth life saw meat third blessed won't saw. Appear days had
+            moveth divided were open moveth. Day rule. Wherein.
+          </p>
+          <div>
+            <p>
+              Paragraph in a div. Earth day first in winged divided earth
+              multiply bearing. Together thing upon gathering said. Of kind. Dry
+              over dominion had behold. Lesser dry us first female lights good.
+            </p>
+          </div>
+          <a
+            class="inline-element"
+            href="http://nove.kodim.cz/czechitas/daweb"
+            target="_blank"
+            >Link to a web</a
+          >
+          <span class="inline-element">Span was life years.</span>
+          <code class="inline-element">.code { color: #f9f9f9; }</code>
+        </article>
+      </section>
+      <h1>Positioning</h1>
+      <section>
+        <header>
+          <h2>Css position</h2>
+          <pre><code>
+            div: {              
+              position:
+              top: 
+              bottom:
+              left:
+              right:
+            }
+          </code></pre>
+        </header>
+
+        <article>
+          <!-- div position static -->
+          <div class="position">I am a div</div>
+        </article>
+      </section>
+      <section>
+        <header>
+          <h2>Static</h2>
+          <pre><code>
+            div: {              
+              position: static
+            }
+          </code></pre>
+        </header>
+
+        <article>
+          <!-- div position static -->
+          <div class="position div-static">static</div>
+        </article>
+      </section>
+      <section>
+        <header>
+          <h2>Relative</h2>
+          <pre><code>
+            div: {              
+              position: relative
+            }
+          </code></pre>
+        </header>
+
+        <article>
+          <!-- div position relative -->
+          <div class="position div-relative">relative</div>
+        </article>
+      </section>
+      <section>
+        <header>
+          <h2>Absolute</h2>
+          <pre><code>
+            div: {              
+              position: absolute
+            }
+          </code></pre>
+        </header>
+
+        <article>
+          <!-- div position absolute -->
+          <div class="position div-absolute-page">absolute to page</div>
+          <div class="parent">
+            <div class="position div-absolute-parent">absolute to parent</div>
+          </div>
+        </article>
+      </section>
+      <section>
+        <header>
+          <h2>Fixed</h2>
+          <pre><code>
+            div: {              
+              position: fixed
+            }
+          </code></pre>
+        </header>
+
+        <article>
+          <!-- div position fixed -->
+          <div class="position div-fixed">fixed</div>
+        </article>
+      </section>
+      <section>
+        <header>
+          <h2>Sticky</h2>
+          <pre><code>
+            div: {              
+              position: sticky
+            }
+          </code></pre>
+        </header>
+
+        <article>
+          <p>
+            It she'd seasons, isn't wherein after. Subdue void have. I grass
+            created firmament which hath every above place. Subdue blessed fly
+            midst Fish lights abundantly morning of evening after.
+          </p>
+          <p>
+            Third own divided female, man whales likeness waters also brought
+            Give behold. Midst the land made third very yielding for so them,
+            lights beginning lights tree their given let appear over subdue set
+            saying fruit female. Male man days yielding fowl creature. Morning
+            years void first unto they're whales itself light fruit his without
+            doesn't life earth cattle let green divide. Seasons. Were Shall let
+            second kind i was give. Winged void man you're from all that tree.
+            Thing was yielding creepeth seasons creeping over air very face from
+            image fowl isn't heaven greater first male his god blessed creepeth.
+          </p>
+          <p>
+            After dry. Waters blessed third man green signs, us. Dominion for
+            every wherein years Fruit fish firmament she'd don't together second
+            isn't years saw fish hath may night whales thing without appear kind
+            sixth fowl he created stars winged heaven moveth fruitful creeping
+            be every fifth second behold. Own fourth. Upon moved, abundantly
+            gathering fourth rule form fish one you'll from seasons whose him
+            tree. Meat fly whales. Can't fill brought be wherein isn't make,
+            lesser were fly abundantly without a you'll fourth give dry shall
+            all saying. Fourth i. Him she'd there good void good image one fish
+            thing.
+          </p>
+          <!-- div position sticky -->
+          <div class="position div-sticky">sticky</div>
+          <p>
+            Over which. Seasons man. In all fill and brought over i winged be
+            from lesser living forth they're she'd lights us our whose you're
+            earth sixth. Meat which together all. Creeping had make called set
+            living Yielding Lesser kind heaven, bearing, light so divide of
+            light make have behold it give day shall won't. Called very were
+            divided under. So i likeness hath earth saw first. Meat give saying
+            sixth i kind, of. Deep. Seed two. Green. Saw she'd. Waters whose
+            unto unto of creature their.
+          </p>
+          <p>
+            Us after signs. Great replenish also gathering our open two all. His
+            evening so their male heaven. He isn't second sixth were brought
+            image light said hath his you'll seasons greater gathering behold.
+            There own. Herb fruit hath. Kind darkness. Yielding for upon forth
+            Multiply behold. Our was under life green every them. Creature signs
+            beast whose seas him. Darkness gathered cattle won't were evening
+            gathered darkness night above light have have face Forth itself
+            dominion fruit years were god. Fish greater won't give midst.
+            Darkness one saw she'd us and. Brought heaven creeping green is
+            itself saying. God forth have sixth very, appear may greater divide
+            place. Evening good upon fifth can't is.
+          </p>
+          <p>
+            For us he. Together gathering us. Won't together brought form
+            yielding dominion it. Their their rule. Whose, moving female. Night.
+            The thing. You'll first. You night signs living creature every deep
+            fowl wherein to. It fowl. You'll whales made first have there, of
+            him let can't. Living for forth fourth bring likeness third you're
+            lights open which, he him. For. You. Likeness moveth male second
+            bearing spirit which seas upon seasons likeness the likeness us sea
+            shall fly gathered creepeth, under the great of sixth. Meat and. He
+            lesser blessed dry seasons.
+          </p>
+          <p>
+            Living moved appear the saying seas. Fly let to abundantly green two
+            she'd deep open great third midst. Beast have saw appear and beast
+            firmament moving give it fourth saying whales us own waters blessed.
+            Which give. Day. Female. Evening give. Whose him dry man. Sea also
+            fourth gathering thing. Light. There it lights dry blessed second
+            all Have male replenish the hath rule moved saying don't blessed
+            replenish spirit. Of Given signs, i heaven moving lights good. Can't
+            don't rule. That void they're whose. Evening saying image god i was
+            darkness seed meat thing moveth spirit fly creepeth. They're she'd
+            day good you divide all called days.
+          </p>
+          <p>
+            Male sixth seed called also seed. Winged so doesn't form lesser.
+            There isn't night gathering his had. Fourth above seas stars saying
+            fish creature us earth likeness saying creepeth very moveth hath
+            fruitful man night sixth saw upon. Herb divide deep, dominion moving
+            moveth second is firmament be, fly. Evening image upon day saw. Him
+            brought. Our. Fly stars darkness winged. Made, grass evening meat
+            their. A. Spirit lights face tree. Air the can't land. Evening have
+            him female. Bring dominion a so given darkness there darkness good
+            fill said of. Open green greater herb sixth fruit earth man. Cattle.
+            The he you Unto may which image a. Creature greater over male.
+          </p>
+          <p>
+            Dominion image saying bring wherein. Form give moveth she'd beast
+            land fruitful seed which day image itself days herb. Moveth man a
+            subdue. Evening open is grass so moveth so light evening. Winged
+            creature thing herb she'd above greater them beast lesser life their
+            that. Can't herb, female she'd seed gathered dominion. Spirit itself
+            void. Don't morning. Said earth fish wherein under land brought
+            their man beast after appear subdue moving replenish darkness a
+            called darkness. Heaven a beast. Upon face rule from cattle. Green,
+            that is. Rule place god brought be rule cattle whales. Fifth
+            together beginning set hath you god land deep them green him One
+            behold. Our the every second he days set and i upon one so kind our.
+            Let Moved shall Seas divided land that years dry thing Together rule
+            morning open likeness fruit can't saying midst his, doesn't man life
+            man whales hath a green good years fifth there fill after made image
+            fowl own his that wherein evening divide. It a multiply she'd two
+            hath doesn't form fruit likeness days, it face image let created.
+            Their second place subdue the years.
+          </p>
+        </article>
+      </section>
+    </main>
   </body>
 </html>

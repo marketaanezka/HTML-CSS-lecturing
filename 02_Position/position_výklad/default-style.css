@@ -36,6 +36,7 @@ section {
   border-radius: 15px;
   box-shadow: 0 0 15px #5a5a6b6b;
   margin-bottom: 120px;
+  max-width: 700px;
 }
 
 header {
@@ -63,10 +64,11 @@ article {
   padding: 16px;
   background-color: #f9f9f9;
   border-radius: 0 0 15px 15px;
+  min-height: 60vh;
 }
 
 div {
-  background-color: #f5f5fd;
+  background-color: #d9d9ec;
   border: 1px solid #dedef5;
   border-radius: 5px;
   padding: 10px;
@@ -86,8 +88,26 @@ div {
   text-align: center;
 }
 
+.div-static {
+  background-color: #9ce9c9;
+}
+
+.div-relative {
+  background-color: #fac3ad;
+}
+
+.div-absolute-page {
+  background-color: #eec0c6;
+}
+
 .div-absolute-parent {
-  width: 100px;
-  height: 100px;
-  background-color: #d2c4e4;
+  background-color: #e6e6b1;
+}
+
+.div-fixed {
+  background-color: #b5dcf5;
+}
+
+.div-sticky {
+  background-color: #f1d596;
 }
