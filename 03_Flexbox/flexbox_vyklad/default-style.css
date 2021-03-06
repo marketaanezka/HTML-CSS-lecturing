@@ -45,6 +45,9 @@ header {
   color: #ececf6;
   border-radius: 15px 15px 0 0;
 }
+header.no-article {
+  border-radius: 15px;
+}
 
 h2 {
   margin-top: 8px;
@@ -72,42 +75,50 @@ div {
   border: 1px solid #dedef5;
   border-radius: 3px;
   padding: 10px;
-  margin: 10px 0;
 }
 
-.inline-element {
+/*-----------------*/
+
+.flex-container {
   padding: 5px;
-  margin-top: 10px;
-  border-radius: 10px;
-  border: 2px solid #d8d8f1;
 }
 
-.position {
-  width: 200px;
-  height: 200px;
-  text-align: center;
+h4 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 
-.div-static {
-  background-color: #9ce9c9;
+.flex-item {
+  min-width: 100px;
 }
 
-.div-relative {
-  background-color: #fac3ad;
+.first {
+  background-color: #f6cefc;
+  border: 1px solid #c58fce;
 }
 
-.div-absolute-page {
-  background-color: #eec0c6;
+.second {
+  background-color: #ddfcc1;
+  border: 1px solid #85b858;
 }
 
-.div-absolute-parent {
-  background-color: #e6e6b1;
+.third {
+  background-color: #ffd5a6;
+  border: 1px solid #a0723e;
 }
 
-.div-fixed {
-  background-color: #b5dcf5;
+.fourth {
+  background-color: #c1fce5;
+  border: 1px solid #449475;
 }
 
-.div-sticky {
-  background-color: #f1d596;
+.fifth {
+  background-color: #cdc6fb;
+  border: 1px solid #695db6;
 }
+.flex-shrink-container {
+  height: 700px;
+}
+
+/*--------------*/
