@@ -87,6 +87,7 @@ div {
   top: 400px;
 }
 
+/* ---------- */
 .btn {
   background-color: #cddceb;
   font-size: 18px;
@@ -104,4 +105,12 @@ div {
 
 .pet {
   width: 100%;
+}
+
+.new-header {
+  background-color: hotpink;
+}
+
+.blue-header-text {
+  color: darkblue;
 }

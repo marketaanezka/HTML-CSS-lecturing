@@ -39,23 +39,27 @@
           <h2>DOM element</h2>
           <pre><code>
             const headerElm = document.querySelector('.header');
+  
             headerElm
-
             // &lt;div class="header"&gt;Page header&lt;/div&gt;
           </code></pre>
         </header>
       </section>
-      <div class="new-header">Page header</div>
+      <!-- DIV HEADER -->
+      <div class="header">Page header</div>
+      <!-- DIV HEADER -->
       <h1 class="changing-dom">Changing DOM in JS</h1>
       <section>
         <header>
           <h2>textContent</h2>
           <pre><code>
             const headerElm = document.querySelector('header');
+            
             headerElm
-
             // &lt;div class="header"&gt;Page header&lt;/div&gt;
+
             headerElm.textContent = 'New header'
+            
             headerElm
             // &lt;div class="header"&gt;New header&lt;/div&gt;
           </code></pre>
@@ -65,7 +69,6 @@
         <header>
           <h2>Styling</h2>
           <pre><code>
-            const headerElm = document.querySelector('.header');
             headerElm.style.color = 'white'
             headerElm.style.paddingTop = '2rem'
           </code></pre>
@@ -75,7 +78,6 @@
         <header>
           <h2>Changing class</h2>
           <pre><code>
-            const headerElm = document.querySelector('header');
             headerElm
             // &lt;div class="header"&gt;Page header&lt;/div&gt;
 
@@ -110,9 +112,9 @@
         <header>
           <h2>Changing attributes</h2>
           <pre><code>
-            const petElement = document.querySelector('.pet');
-            petElement.src = 'img/cat.jpg';
-            petElement.alt = 'cat';
+            const petElm = document.querySelector('.pet');
+            petElm.src = 'img/cat.jpg';
+            petElm.alt = 'cat';
           </code></pre>
         </header>
         <article>
@@ -120,5 +122,6 @@
         </article>
       </section>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>
