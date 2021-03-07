@@ -1,0 +1,64 @@
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: #e4f1ee;
+  color: #3a4249;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cafe {
+  width: 300px;
+  padding: 15px;
+  margin: 20px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #80a19ab7;
+}
+
+.cafe__picture {
+  width: 100%;
+  height: 180px;
+  border-radius: 5px;
+}
+
+.cafe__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  margin: 5px 0;
+}
+
+.cafe__description {
+  font-size: 0.8rem;
+}
+.cafe__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cafe__open {
+  font-size: 0.8rem;
+  color: #193a57;
+}
+
+.cafe__open--now {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.cafe__btn-web {
+  width: 80px;
+  height: 30px;
+  margin-right: 15px;
+  background-color: #e77063;
+  color: #ffff;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
