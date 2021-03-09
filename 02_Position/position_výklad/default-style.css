@@ -60,6 +60,7 @@ pre {
 code {
   font-size: 18px;
   padding: 5px 10px;
+  white-space: pre-wrap;
 }
 
 article {
