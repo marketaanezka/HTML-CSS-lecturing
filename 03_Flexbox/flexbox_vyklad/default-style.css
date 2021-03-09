@@ -55,12 +55,10 @@ h2 {
   text-align: center;
 }
 
-pre {
-  align-self: flex-start;
-}
 code {
   font-size: 18px;
   padding: 5px 10px;
+  white-space: pre-wrap;
 }
 
 article {

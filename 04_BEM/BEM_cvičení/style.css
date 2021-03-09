@@ -1,0 +1,95 @@
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #2c3e66;
+  background-color: #e4e2e2;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1 {
+  text-align: center;
+}
+
+.holiday {
+  min-width: 650px;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.holiday__visual {
+  flex: 0 0 50%;
+  margin: 0;
+}
+
+.holiday__pic {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.holiday__pic-description {
+  margin-top: 8px;
+  font-size: 0.8rem;
+  color: #40537a;
+}
+
+.holiday__offer {
+  height: 100%;
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+
+.holiday__title {
+  margin: 16px 0;
+  text-transform: uppercase;
+}
+
+.holiday__stay {
+  background-color: #f3e7f3;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+.holiday__description {
+  text-align: justify;
+}
+
+.holiday__footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.holiday__price,
+.holiday__book-btn {
+  border-radius: 8px;
+  width: 120px;
+  height: 50px;
+  border: 1.2px solid #953c95;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.holiday__price {
+  color: #953c95;
+  font-weight: 600;
+}
+.holiday__book-btn {
+  background-color: #953c95;
+  color: #f9f9f9;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1rem;
+  box-shadow: 0 0 8px #503d50b6;
+}
