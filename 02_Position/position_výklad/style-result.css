@@ -19,8 +19,7 @@ body {
   text-align: center;
 }
 
-h3 {
-  font-size: 1.6rem;
+h2 {
   text-align: center;
 }
 
@@ -30,9 +29,8 @@ main {
   align-items: stretch;
   margin: 0 80px;
 }
-h2 {
+h1 {
   align-self: flex-start;
-  font-size: 2rem;
 }
 section {
   border-radius: 15px;
@@ -96,20 +94,37 @@ div {
 
 .div-relative {
   background-color: #fac3ad;
+  position: relative;
+  top: 50px;
 }
 
 .div-absolute-page {
   background-color: #eec0c6;
+  position: absolute;
+  right: 250px;
+}
+
+.parent {
+  position: relative;
 }
 
 .div-absolute-parent {
   background-color: #e6e6b1;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .div-fixed {
   background-color: #b5dcf5;
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 
 .div-sticky {
   background-color: #f1d596;
+  position: sticky;
+  top: 0;
+  bottom: 0;
 }
