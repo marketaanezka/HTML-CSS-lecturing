@@ -2,45 +2,44 @@
 :before,
 :after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: "Noto Sans JP", sans-serif;
   color: #2c3e66;
   background-color: #e4e2e2;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 h1 {
   text-align: center;
 }
 
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
 .holiday {
-  min-width: 650px;
-  max-width: 800px;
+  width: 650px;
   display: flex;
   align-items: center;
-  background-color: #f9f9f9;
+  background: linear-gradient(92deg, #bdc6f0, #b6e6e9);
   border-radius: 10px;
-  padding: 20px;
+  padding: 25px;
   margin: 20px;
 }
 
-.holiday__visual {
+.holiday__picture {
   flex: 0 0 50%;
+  width: 50%;
   margin: 0;
-}
-
-.holiday__pic {
-  width: 100%;
   border-radius: 4px;
-}
-
-.holiday__pic-description {
-  margin-top: 8px;
-  font-size: 0.8rem;
-  color: #40537a;
 }
 
 .holiday__offer {
@@ -53,17 +52,20 @@ h1 {
 }
 
 .holiday__title {
-  margin: 16px 0;
+  margin-bottom: 8px;
+  font-size: 2rem;
   text-transform: uppercase;
+  color: #4c61c6;
 }
 
 .holiday__stay {
-  background-color: #f3e7f3;
-  padding: 4px 8px;
-  border-radius: 8px;
+  color: #4c61c6;
+  letter-spacing: 0.3px;
+  font-weight: 600;
 }
 
 .holiday__description {
+  margin-top: 8px;
   text-align: justify;
 }
 
@@ -77,19 +79,26 @@ h1 {
   border-radius: 8px;
   width: 120px;
   height: 50px;
-  border: 1.2px solid #953c95;
+  border: 1.2px solid #4c61c6;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.2rem;
 }
+
 .holiday__price {
-  color: #953c95;
+  color: #4c61c6;
   font-weight: 600;
 }
+
+.holiday__price--promote {
+  background-color: #fadd80;
+  border: 2px solid #af8e25;
+}
+
 .holiday__book-btn {
-  background-color: #953c95;
+  background-color: #4c61c6;
   color: #f9f9f9;
   font-family: "Noto Sans JP", sans-serif;
-  font-size: 1rem;
   box-shadow: 0 0 8px #503d50b6;
 }
