@@ -27,7 +27,7 @@ nav img {
   font-family: sans-serif;
 }
 
-figure {
+.picture {
   width: 400px;
   height: 270px;
   margin: 30px;
@@ -41,7 +41,7 @@ img {
   height: 100%;
 }
 
-.contact {
+.travel {
   width: 150px;
   height: 40px;
   padding: 10px;
@@ -63,3 +63,40 @@ img {
 }
 
 /* ---Your code starts here--- */
+
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+main {
+  margin-top: 40px;
+}
+
+.travel {
+  position: sticky;
+  top: 50px;
+  z-index: 10;
+}
+
+.picture {
+  position: relative;
+}
+
+.picture-description {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.mountains,
+.sea {
+  left: 450px;
+}
+
+.chat {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
