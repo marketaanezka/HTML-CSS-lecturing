@@ -69,7 +69,7 @@ nav {
 }
 
 main {
-  /* zajisti, aby navigace nepřekrývala obsah navigace je vysoká 40px*/
+  /* zajisti, aby navigace nepřekrývala obsah. Navigace je vysoká 40px*/
 }
 
 .travel {
@@ -81,7 +81,7 @@ main {
 }
 
 .picture__description {
-  /* popisek obrázku se nachází na obrázku, 10px shora a 10px zprava */
+  /* popisek obrázku se nachází přímo na obrázku, 10px shora a 10px zprava */
 }
 
 .mountains,
