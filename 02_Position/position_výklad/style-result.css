@@ -87,7 +87,6 @@ div {
   height: 200px;
   text-align: center;
 }
-/* ---------------- */
 
 .div-static {
   background-color: #9ce9c9;
@@ -95,12 +94,83 @@ div {
 
 .div-relative {
   background-color: #fac3ad;
-  position: relative;
-  top: 50px;
 }
 
 .div-absolute-page {
   background-color: #eec0c6;
+}
+
+.div-absolute-parent {
+  background-color: #e6e6b1;
+}
+
+.div-fixed {
+  background-color: #b5dcf5;
+}
+
+.div-sticky {
+  background-color: #f1d596;
+}
+
+/* ---------------- */
+/* vlastnost
+  display
+  (block, inline, inline block, list item, table, none
+
+normalni flow stranky - odshora dolu 
+vznika layout stranky - nestaci to 
+float, table --> dnes position, flex, grid
+
+vyjmuti z toku stranky znamena: ukazat 
+*/
+.div-flow {
+  display: none;
+}
+/*
+pred position - page, viewport, element, z-index
+POSITION: vlastnost vs hodnota v css*/
+
+/* Vlastnost position nastavujeme tomu prvku, který chceme někam pozicovat (posouvat na ose x a y). 
+Tomu samému prvku poté nastavujeme, o kolik se má posunout a v jakém směru. 
+Od shora – top, 
+Od zdola – bottom
+Zleva – left
+Hodnoty těchto vlastností jsou jednotky (pixely, em, rem, vh, etc.) 
+Důležité je, že top neznamená nahoru, a left doleva, ale o kolik se prvek posune od okraje toho, vůči čemu se pozicuje. 
+Zprava – right 
+Dostáváme se k té nejdůležitější části. Jaké jsou hodnoty vlasnosti position? 
+static
+relative
+fixed
+absolute
+sticky
+-	Sticky je jako poslední, není zatím podporovaná IE 
+Pokud mluvíme o tom, že je prvek napozicovaný, tak to znamená, že má jinou hodnotu vlastnosti position, než je defaultní static. 
+ 
+1.	Position static je u prvků defaultní – jak by se vyobrazily v normálním flow 
+Pokud zadáme parametry top/left/bottom/right, nic to s prvkem neudělá. 
+zachovává svou pozici ve flow DOMu  */
+
+.div-static {
+  top: 500px;
+  /* nic to nedela */
+}
+
+/* dalsi hodnoty nam definuji, o kolik se prvek ma posunout a VUCI cemu */
+
+/* 2.	Position relative znamená, že se prvek pozicuje (posouvá odshora/zleva/zprava/zdola) od své původní pozice, kterou by měl v normálním flow (static position). 
+zachovává svou pozici ve flow DOMu Zbytek stránky se nijak neposune, aby vyplnil místo, které se uvolnilo – takže po prvku zbude prázné místo. 
+! z-indexem se ale posune dopředu „navrch“ */
+
+.div-relative {
+  position: relative;
+  top: 50px;
+}
+
+/* 3.	Position absolute element je vyjmutý z toku (flow) dokumentu, stejně jako u position fixed nebo sticky. Neovlivňuje tedy poskládání ostatních elementů na stránce. Díky tomu je možné ho napozicovat kamkoli na stránku. Pozicuje se relativně k rodiči, který je napozicovaný (to většinou znamená, že je to rodičovský element, který má position relative). Pokud takový rodič není, pozicuje se absolutně k celé stránce (body). 
+o	Nejprve ukázat vzhledem k celé stránce, potom obalit rodičem */
+
+.div-absolute-page {
   position: absolute;
   right: 250px;
 }
@@ -110,22 +180,35 @@ div {
 }
 
 .div-absolute-parent {
-  background-color: #e6e6b1;
   position: absolute;
   right: 0;
   bottom: 0;
 }
 
+/* 4.	Position fixed – prvek se pozicuje vzhledem k viewportu a vyjme se z flow stránky – nezbyde po něm žádné prázdné místo
+! u pozicování se musí dávat pozor také na z-index – vlastnost position totiž také ovlivňuje, který prvek se posune dopředu.  */
+
 .div-fixed {
-  background-color: #b5dcf5;
   position: fixed;
   top: 0;
   right: 0;
 }
+/* 5.	Position sticky - Když je sticky element uvnitř viewportu, chová se jako static/relative, tedy se nijak neprojevuje.
+Po opuštění okna se potom chová jako fixed (zafixování na jednom místě).
+hodnoty left a right se projeví většinou hned, top a bottom až při scrollování a vyjetí z viewportu 
+Top – při scrollování dolů
+Bottom – při scrollování nahorů 
+Sticky si automaticky určuje, že se přilepí ke svému rodiči. Pokud rodič nemá obsah, který by se dal scrollovat, tak sticky nebude fungovat 
+Používá se u neodbytných reklam například, nebo u sloupců a hlaviček tabulek.  */
 
 .div-sticky {
-  background-color: #f1d596;
   position: sticky;
   top: 0;
   bottom: 0;
 }
+
+/* ukazky 
+http://danielfiller.com/
+https://novotel.accor.com/gb/usa/index.shtml
+https://dribbble.com/shots/14158190-Homepage-Web-Design-for-Ecodenta
+*/
