@@ -1,0 +1,48 @@
+/* .div-flow {
+  display: none;
+} */
+
+.div-static {
+  position: static;
+  top: 100px;
+  left: 500px;
+}
+
+.div-relative {
+  position: relative;
+  left: 150px;
+  top: 50px;
+  /* z-index: 9; */
+}
+
+/* p {
+  position: relative;
+  z-index: 10;
+} */
+
+.div-absolute-page {
+  position: absolute;
+  right: 10px;
+}
+
+.parent {
+  position: relative;
+}
+
+.div-absolute-parent {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+/* .div-fixed {
+  position: fixed;
+  right: 100px;
+  top: 0;
+} */
+
+.div-sticky {
+  position: sticky;
+  top: 0;
+  bottom: 0;
+}

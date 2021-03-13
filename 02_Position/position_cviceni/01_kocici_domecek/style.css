@@ -24,6 +24,7 @@ h1 {
   border: 5px solid black;
   border-radius: 20px;
   background: url(images/stred.png) no-repeat center/cover;
+  position: relative;
   /*
 		tady asi budeš muset něco přidat, abys
 		pak mohla pozicovat kočky v rámci domečku
@@ -48,6 +49,9 @@ h1 {
 		uprostřed domečku, protože tam má na
 		dovádění nejvíc místa
 	*/
+  position: absolute;
+  left: calc(50% - 170px / 2);
+  top: calc(50% - 118px / 2);
 }
 
 .kniha {
