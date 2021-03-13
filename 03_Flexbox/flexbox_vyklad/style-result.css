@@ -1,24 +1,32 @@
 /* Flexbox 
-víme, že se dá udělat rozložení na stránce nastavením css vlastnosti position u jednotlivých prvků, ale s tím jak se v čase kódování webů vyvíjí, tak se rozšiřují s zjednodušují i možnosti, jak rozložení webů dělat. 
+víme, že se dá udělat rozložení na stránce nastavením css vlastnosti position u jednotlivých prvků,
+ale s tím jak se v čase kódování webů vyvíjí, tak se rozšiřují s zjednodušují i možnosti, jak rozložení webů dělat. 
 Takže není potřeba už používat tabulky, nebo floaty. 
 V současné době se pro rozložení prvků na stránce nebo v sekcích používá flexbox nebo grid. 
 Flexbox je ideální pro rozložení prvků v sekcích (navbar, galerie fotek etc.), ale dá se s ním i udělat layout celého webu. 
-Pro složitější webový layout se doporučuje použití gridu. Ten na daWeb probírat nebudeme, ale určitě se s ním v budoucnu setkáte, případně si nasdílíme zdroje, abyste se ho mohly v průběhu doučit.  */
+Pro složitější webový layout se doporučuje použití gridu. Ten na daWeb probírat nebudeme,
+ale určitě se s ním v budoucnu setkáte, případně si nasdílíme zdroje, abyste se ho mohly v průběhu doučit.  */
 
-/* Flexbox se vždy týká obalového elementu – kontejneru a jeho potomků – položek. V AJ se jim pak říká flex-container a flex-items. 
-Flexbox znamená, že položky v daném kontejneru jsou flexibilní, pružné a tak i vyplňují volný prostor v kontejneru. Podle našeho zadání. 
-Je potřeba mít vždy na paměti, že jsou vlastnosti, které nastavujeme kontejneru – obalu a jiné, které nastavujeme jednotlivým flex-items. 
+/* Flexbox se vždy týká obalového elementu – kontejneru a jeho potomků – položek. 
+V AJ se jim pak říká flex-container a flex-items. 
+Flexbox znamená, že položky v daném kontejneru jsou flexibilní, pružné a tak i vyplňují volný prostor v kontejneru. 
+Podle našeho zadání. 
+Je potřeba mít vždy na paměti, že jsou vlastnosti, které nastavujeme kontejneru – 
+obalu a jiné, které nastavujeme jednotlivým flex-items. 
 Pokud máme obsah, který chceme nastylovat jako flexbox, tak vždy musíme zajistit, že je obalený v kontejneru.  */
 
 /* Kontejneru potom nastavíme vlastnost display:flex; 
-Toto nám zajistí, že se nám děti tohoto kontejneru poskládají vedle sebe (respektive podél jedné osy) a stanou se z nich flex-items, to znamená, že určitým způsobem vyplňují místo v kontejneru. Zároveň jim můžeme nastavovat další vlastnosti a ovlivnit jak to místo vyplňují.  */
+Toto nám zajistí, že se nám děti tohoto kontejneru poskládají vedle sebe (respektive podél jedné osy) a stanou se z nich flex-items, 
+to znamená, že určitým způsobem vyplňují místo v kontejneru. Zároveň jim můžeme nastavovat další vlastnosti a ovlivnit jak to místo vyplňují.  */
 
 .flex-container {
   display: flex;
 }
 
-/* Flexbox je jednosměrný – to znamená, že má hlavní osu – buď je to řádek nebo sloupec / row nebo column / horizontální nebo vertikální 
-Další vlastnost na kontejneru je flex-direction. – tak právě nastavíme, jaká bude hlavní osa – jestli row, nebo column. Podle té se nám potom prvky také seřadí. 
+/* Flexbox je jednosměrný – to znamená, že má hlavní osu – 
+buď je to řádek nebo sloupec / row nebo column / horizontální nebo vertikální 
+Další vlastnost na kontejneru je flex-direction. – tak právě nastavíme, jaká bude hlavní osa – jestli row, nebo column. 
+Podle té se nám potom prvky také seřadí. 
 row, row-reverse, column, column-reverse */
 
 .flex-container {
