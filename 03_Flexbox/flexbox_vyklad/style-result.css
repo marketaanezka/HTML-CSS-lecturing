@@ -1,0 +1,82 @@
+/* Flexbox 
+víme, že se dá udělat rozložení na stránce nastavením css vlastnosti position u jednotlivých prvků, ale s tím jak se v čase kódování webů vyvíjí, tak se rozšiřují s zjednodušují i možnosti, jak rozložení webů dělat. 
+Takže není potřeba už používat tabulky, nebo floaty. 
+V současné době se pro rozložení prvků na stránce nebo v sekcích používá flexbox nebo grid. 
+Flexbox je ideální pro rozložení prvků v sekcích (navbar, galerie fotek etc.), ale dá se s ním i udělat layout celého webu. 
+Pro složitější webový layout se doporučuje použití gridu. Ten na daWeb probírat nebudeme, ale určitě se s ním v budoucnu setkáte, případně si nasdílíme zdroje, abyste se ho mohly v průběhu doučit.  */
+
+/* Flexbox se vždy týká obalového elementu – kontejneru a jeho potomků – položek. V AJ se jim pak říká flex-container a flex-items. 
+Flexbox znamená, že položky v daném kontejneru jsou flexibilní, pružné a tak i vyplňují volný prostor v kontejneru. Podle našeho zadání. 
+Je potřeba mít vždy na paměti, že jsou vlastnosti, které nastavujeme kontejneru – obalu a jiné, které nastavujeme jednotlivým flex-items. 
+Pokud máme obsah, který chceme nastylovat jako flexbox, tak vždy musíme zajistit, že je obalený v kontejneru.  */
+
+/* Kontejneru potom nastavíme vlastnost display:flex; 
+Toto nám zajistí, že se nám děti tohoto kontejneru poskládají vedle sebe (respektive podél jedné osy) a stanou se z nich flex-items, to znamená, že určitým způsobem vyplňují místo v kontejneru. Zároveň jim můžeme nastavovat další vlastnosti a ovlivnit jak to místo vyplňují.  */
+
+.flex-container {
+  display: flex;
+}
+
+/* Flexbox je jednosměrný – to znamená, že má hlavní osu – buď je to řádek nebo sloupec / row nebo column / horizontální nebo vertikální 
+Další vlastnost na kontejneru je flex-direction. – tak právě nastavíme, jaká bude hlavní osa – jestli row, nebo column. Podle té se nám potom prvky také seřadí. 
+row, row-reverse, column, column-reverse */
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* flex-wrap -zajisti, ze pokud se prvky vedle sebe nevejdou, seradi se dale
+defaultni je nowrap */
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Dále je na kontejneru možné nastavit, jak se prvky uvnitř něj zarovnají: 
+Justify-content a align-items
+Justify content zarovnává prvky uvnitř podle hlavní osy:
+Flex-start – defaultní – na začátek osy
+Flex-end – na konec osy
+(dále je tam start a end – writing mode a left a right)
+Center – do centra 
+Space between – prvky jsou rozmístěny rovnoměrně na ose, první prvek úplně na začátku, poslední prvek úplně na konci
+Space around – prvky jsou rozmístěny rovnoměrně na ose, a kolem nich je vždy stejně volného prostoru na každé straně (pro každý prvek zleva i zprava) 
+Space evenly - prvky jsou rozmístěny rovnoměrně na ose a mezi dvěma prvky je vždy stejné místo 
+ */
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Align-items podle vedlejší. 
+Stretch (default)
+Flex-start/start/self-start – začátek vedlejší osy 
+Flex-end/end/self-end konec
+Center
+Baseline 
+Poslední na kontejneru je flex-wrap: 
+Nowrap / defaultní
+Wrap – normálně jak čteme tak se zalamuje
+Wrap-reverse – zalamuje se naopak 
+
+Align content – pokud máme hodně obsahu na několika řádcích, tak jak se tyto zarovnávájí.  */
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Dostáváme se k položkám – flex-items
+Order – defaultně je to nula!! Takže pokus nastavíme nějakému 1, tak bude na konci */
+
+.first {
+  order: 1;
+}
+
+/* UKAZKY
+https://dribbble.com/shots/14119591/attachments/5742395?mode=media
+https://dribbble.com/shots/15201406-Dating-Web-Apps/attachments/6945356?mode=media
+https://dribbble.com/shots/14600153-Jalanin-Travel-Landing-Page */

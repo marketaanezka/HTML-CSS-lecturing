@@ -11,9 +11,9 @@
 .activity {
   margin: 10px;
   background-size: contain;
-  border: 1px solid #c4c4e2e5;
-  width: 300px;
-  height: 200px;
+  background-repeat: no-repeat;
+  width: 450px;
+  height: 300px;
 }
 
 .read {
@@ -24,23 +24,29 @@
   background-image: url("img/cook.jpg");
 }
 
-.cat {
-  background-image: url("img/cat.jpg");
+.code {
+  background-image: url("img/code.jpg");
 }
+
 .family {
   background-image: url("img/family.jpg");
 }
+
 .netflix {
   background-image: url("img/netflix.jpg");
 }
-.walk {
-  background-image: url("img/walk.jpg");
-}
+
 .sleep {
   background-image: url("img/sleep.jpg");
 }
 
 /* --------------- */
 /* zadání: 
-Prohlédni si html soubor. Nastyluj obrázky, aby se zobrazily vedle sebe, vycentrovaly v obalovém divu a zalamovaly, pokud se nevejdou na stránku. 
+Prohlédni si html soubor. Nastyluj obrázky / jejich kontejner, aby se zobrazily vedle sebe, vycentrovaly v obalovém divu a zalamovaly, pokud se nevejdou na stránku. 
 Potom obrázky seřaď podle toho, jakou aktivitu bys hned po lekci dělala nejradši  */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
