@@ -40,8 +40,11 @@
 }
 
 /* ZADÁNÍ: 
-Prohlédni si strukturu HTML. Urči si, co jsou flex-kontejnery, a co flex-položky. Některé prvky mohou být obojí! Potom nastyluj stránku, aby odpovídala výslednému obrázku. Není potřeba elementy už dále stylovat. Používej pouze vlastnosti, které jsme se naučili k flexboxu. 
- */
+Prohlédni si strukturu HTML. Urči si, co jsou flex-kontejnery, a co flex-položky. 
+Některé prvky mohou být obojí! Potom nastyluj stránku, aby odpovídala výslednému obrázku. 
+Všimni si, že kontakty sdílí názvy tříd, takže když nastyluješ jeden, styluješ všechny zároveň.
+Není potřeba elementy už dále stylovat. Používej pouze vlastnosti, které jsme se naučili k flexboxu. 
+----- */
 
 .contact-list {
   /* zajisti, aby se kartičky s kontakty zobrazily vedle sebe a vycentrovaly. 
