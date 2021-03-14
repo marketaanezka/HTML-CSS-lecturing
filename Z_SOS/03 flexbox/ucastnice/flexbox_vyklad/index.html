@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flexbox</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./default-style.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1 class="lesson-title">Flexbox</h1>
+    <main>
+      <h1>Web layout</h1>
+      <section>
+        <header class="no-article">
+          <h2>CSS tools</h2>
+          <pre><code>
+            div { display: table; }
+            div { float: left; }
+            div { display: flex; }
+            div { display: grid; }
+          </code></pre>
+        </header>
+      </section>
+      <h1>Flexbox</h1>
+      <section>
+        <header>
+          <h2>flex-container</h2>
+          <h2>flex-item</h2>
+        </header>
+
+        <!-- display: flex -->
+        <article>
+          <div class="flex-container">
+            <div class="flex-item first">
+              <h4>First</h4>
+            </div>
+            <div class="flex-item second">
+              <h4>Second</h4>
+            </div>
+            <div class="flex-item third">
+              <h4>Third</h4>
+            </div>
+            <div class="flex-item fourth">
+              <h4>Fourth</h4>
+            </div>
+            <div class="flex-item fifth">
+              <h4>Fifth</h4>
+            </div>
+          </div>
+        </article>
+      </section>
+      <h1>Flexbox container</h1>
+      <section>
+        <header>
+          <h2>display: flex</h2>
+          <pre><code>
+            .flex-container { display: flex; }
+          </code></pre>
+        </header>
+
+        <!-- display: flex -->
+        <article>
+          <div class="flex-container">
+            <div class="flex-item first">
+              <h4>First</h4>
+            </div>
+            <div class="flex-item second">
+              <h4>Second</h4>
+            </div>
+            <div class="flex-item third">
+              <h4>Third</h4>
+            </div>
+            <div class="flex-item fourth">
+              <h4>Fourth</h4>
+            </div>
+            <div class="flex-item fifth">
+              <h4>Fifth</h4>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section>
+        <header>
+          <h2>Flex-direction (main and cross axis)</h2>
+          <pre><code>
+            .flex-container { 
+              display: flex; 
+              flex-direction: row / column / 
+                              row-reverse/ column-reverse
+            }
+          </code></pre>
+        </header>
+        <!-- flex-direction -->
+        <article>
+          <div class="flex-container">
+            <div class="flex-item first">
+              <h4>First</h4>
+            </div>
+            <div class="flex-item second">
+              <h4>Second</h4>
+            </div>
+            <div class="flex-item third">
+              <h4>Third</h4>
+            </div>
+            <div class="flex-item fourth">
+              <h4>Fourth</h4>
+            </div>
+            <div class="flex-item fifth">
+              <h4>Fifth</h4>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section>
+        <header>
+          <h2>Flex-wrap</h2>
+          <pre><code>
+            .flex-container { 
+              display: flex; 
+              flex-wrap: nowrap / wrap / wrap-reverse
+            }
+          </code></pre>
+        </header>
+
+        <article>
+          <!-- flex-wrap-->
+          <div class="flex-container">
+            <div class="flex-item first">
+              <h4>First</h4>
+            </div>
+            <div class="flex-item second">
+              <h4>Second</h4>
+            </div>
+            <div class="flex-item third">
+              <h4>Third</h4>
+            </div>
+            <div class="flex-item fourth">
+              <h4>Fourth</h4>
+            </div>
+            <div class="flex-item fifth">
+              <h4>Fifth</h4>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section>
+        <header>
+          <h2>Justify-content (main axis)</h2>
+          <pre><code>
+            .flex-container { 
+              display: flex; 
+              justify-content: flex-start / flex-end / center
+                               space-evenly / space-around / 
+                               space-between
+            }
+          </code></pre>
+        </header>
+
+        <article>
+          <!-- justify content -->
+          <div class="flex-container">
+            <div class="flex-item first">
+              <h4>First</h4>
+            </div>
+            <div class="flex-item second">
+              <h4>Second</h4>
+            </div>
+            <div class="flex-item third">
+              <h4>Third</h4>
+            </div>
+            <div class="flex-item fourth">
+              <h4>Fourth</h4>
+            </div>
+            <div class="flex-item fifth">
+              <h4>Fifth</h4>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section>
+        <header>
+          <h2>Align-items (cross axis)</h2>
+          <pre><code>
+            .flex-container { 
+              display: flex; 
+              align-items: stretch / flex-start / flex-end 
+                          / center / baseline
+            }
+          </code></pre>
+        </header>
+
+        <article>
+          <!-- align items -->
+          <div class="flex-container">
+            <div class="flex-item first">
+              <h4>First</h4>
+            </div>
+            <div class="flex-item second">
+              <h4>Second</h4>
+            </div>
+            <div class="flex-item third">
+              <h4>Third</h4>
+            </div>
+            <div class="flex-item fourth">
+              <h4>Fourth</h4>
+            </div>
+            <div class="flex-item fifth">
+              <h4>Fifth</h4>
+            </div>
+          </div>
+        </article>
+      </section>
+      <h1>Flexbox item</h1>
+      <section>
+        <header>
+          <h2>Order</h2>
+          <pre><code>
+            .flex-container { 
+              display: flex; 
+            }
+            .flex-item {
+              order: 0 / number
+            }
+          </code></pre>
+        </header>
+
+        <article>
+          <!-- flex item order -->
+          <div class="flex-container">
+            <div class="flex-item first">
+              <h4>First</h4>
+            </div>
+            <div class="flex-item second">
+              <h4>Second</h4>
+            </div>
+            <div class="flex-item third">
+              <h4>Third</h4>
+            </div>
+            <div class="flex-item fourth">
+              <h4>Fourth</h4>
+            </div>
+            <div class="flex-item fifth">
+              <h4>Fifth</h4>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section>
+        <header>
+          <h2>Flex-basis</h2>
+          <pre><code>
+            .flex-container { 
+              display: flex; 
+            }
+            .flex-item {
+              flex-basis: auto / 200px;
+            }
+          </code></pre>
+        </header>
+
+        <article>
+          <!-- flex basis -->
+          <div class="flex-container">
+            <div class="flex-item first">
+              <h4>First</h4>
+            </div>
+            <div class="flex-item second">
+              <h4>Second</h4>
+            </div>
+            <div class="flex-item third">
+              <h4>Third</h4>
+            </div>
+            <div class="flex-item fourth">
+              <h4>Fourth</h4>
+            </div>
+            <div class="flex-item fifth">
+              <h4>Fifth</h4>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section>
+        <header>
+          <h2>Flex-grow</h2>
+          <pre><code>
+            .flex-container { 
+              display: flex; 
+            }
+            .flex-item {
+              flex-grow: 0 / number;
+            }
+          </code></pre>
+        </header>
+
+        <article>
+          <!-- flex grow -->
+          <div class="flex-container">
+            <div class="flex-item first">
+              <h4>First</h4>
+            </div>
+            <div class="flex-item second">
+              <h4>Second</h4>
+            </div>
+            <div class="flex-item third">
+              <h4>Third</h4>
+            </div>
+            <div class="flex-item fourth">
+              <h4>Fourth</h4>
+            </div>
+            <div class="flex-item fifth">
+              <h4>Fifth</h4>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section>
+        <header>
+          <h2>Flex-shrink</h2>
+          <pre><code>
+            .flex-container { 
+              display: flex; 
+            }
+            .flex-item {
+              flex-shrink: 1 / number;
+            }
+          </code></pre>
+        </header>
+
+        <article>
+          <!-- flex shrink -->
+          <div class="flex-container flex-shrink-container">
+            <div class="flex-item first">
+              <h4>First</h4>
+              Over day made gathered saw fifth was unto one great kind. Void
+              day, bearing fly above darkness give. Heaven. Light fruitful,
+              night.
+            </div>
+            <div class="flex-item second">
+              <h4>Second</h4>
+              Upon don't upon and fourth wherein have Yielding. Their isn't
+              third fruitful gathering very gathered, likeness sixth saw second
+              fruit whose dominion without own dry which waters air. Him days.
+              Kind doesn't. Dominion let after.
+            </div>
+            <div class="flex-item third">
+              <h4>Third</h4>
+              I greater moving kind. Great whales he. Fish. Had appear open
+              evening kind years give created. That. Itself brought Created you
+              give great.
+            </div>
+            <div class="flex-item fourth">
+              <h4>Fourth</h4>
+              Sea. Fruitful. Two fifth. Winged sixth sea you're creature. Winged
+              beginning so lesser. One made may yielding. Bearing. Divided man
+              place. Rule set female i. Sea two had called that you'll signs let
+              of. Divided, him, one set.
+            </div>
+            <div class="flex-item fifth">
+              <h4>Fifth</h4>
+              Make form, midst our bearing day had whales spirit earth beginning
+              won't earth great.
+            </div>
+          </div>
+        </article>
+      </section>
+      <section>
+        <header>
+          <h2>Flex</h2>
+          <pre><code>
+            flex: flex-grow flex-shrink flex-basis
+
+            .flex-item {
+              flex: 0 1 auto;
+            }
+          </code></pre>
+        </header>
+        <article>
+          <!-- flex -->
+          <div class="flex-container">
+            <div class="flex-item first">
+              <h4>First</h4>
+            </div>
+            <div class="flex-item second">
+              <h4>Second</h4>
+            </div>
+            <div class="flex-item third">
+              <h4>Third</h4>
+            </div>
+            <div class="flex-item fourth">
+              <h4>Fourth</h4>
+            </div>
+            <div class="flex-item fifth">
+              <h4>Fifth</h4>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

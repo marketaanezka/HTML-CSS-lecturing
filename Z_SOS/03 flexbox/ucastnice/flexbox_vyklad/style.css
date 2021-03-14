@@ -1,0 +1,21 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  /* height: 500px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around; */
+}
+
+.fifth {
+  order: -1;
+}
+
+.second {
+  order: 1;
+}
+
+.first {
+  order: 20;
+}
