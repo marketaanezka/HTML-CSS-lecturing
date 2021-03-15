@@ -88,7 +88,6 @@ p {
 }
 
 .holiday__price--promo {
-  transform: scale(1.25);
   background-color: #ffec88;
   border: 2px solid #dac658;
 }
