@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  color: fuchsia;
+}
+
+.box {
+  background-color: lightpink;
+  padding: 10px;
+}
+
+#unique-box {
+  border: 3px solid blueviolet;
+}
+
+p:hover {
+  background-color: cadetblue;
+}

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selektory</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./default-style.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1 class="lesson-title">CSS selektory</h1>
+    <main>
+      <section>
+        <header>
+          <h2>Vícenásobný selektor</h2>
+          <h4>
+            Vybere všechny prvky, které odpovídají jakémukoli z uvedených
+            selektorů
+          </h4>
+          <pre>
+            <code>
+    div, p { background-color: turquoise; }
+            </code>
+          </pre>
+        </header>
+        <!-- VÍCENÁSOBNÝ SELEKTOR -->
+
+        <article>
+          <p>
+            Paragraph. To without multiply creeping two days created. Him let
+            second us doesn't yielding land place. Very upon winged beast great
+            form creepeth life saw meat third blessed won't saw. Appear days had
+            moveth divided were open moveth. Day rule. Wherein.
+          </p>
+          <div>
+            <p>
+              Paragraph in a div. Earth day first in winged divided earth
+              multiply bearing. Together thing upon gathering said. Of kind. Dry
+              over dominion had behold. Lesser dry us first female lights good.
+            </p>
+          </div>
+          <a href="https://kodim.cz/czechitas/daweb" target="_blank"
+            >Link to a web</a
+          >
+        </article>
+      </section>
+      <section>
+        <header>
+          <h2>Selektor pro vícenásobnou třídu</h2>
+          <h4>
+            Vybere všechny prvky, které na sobě mají uvedené všechny uvedené CSS
+            třídy.
+          </h4>
+          <pre><code > 
+    .text.article { background-color: yellowgreen; } 
+          </code></pre>
+        </header>
+        <!-- VICENASOBNA TRIDA -->
+
+        <article>
+          <p class="text">
+            To without multiply creeping two days created. Him let second us
+            doesn't yielding land place. Very upon winged beast great form
+            creepeth life saw meat third blessed won't saw. Appear days had
+            moveth divided were open moveth. Day rule. Wherein.
+          </p>
+          <p class="text article">
+            Earth day first in winged divided earth multiply bearing. Together
+            thing upon gathering said. Of kind. Dry over dominion had behold.
+            Lesser dry us first female lights good.
+          </p>
+          <p class="article">
+            Their grass greater gathering. In a from multiply herb hath together
+            beginning. Unto very made second, waters deep good fourth dominion
+            good she'd herb don't and. Days midst the he you're dry two dry
+            image. Them. Form to a, replenish.
+          </p>
+        </article>
+      </section>
+      <section>
+        <header>
+          <h2>Selektor typu potomek</h2>
+          <h4>
+            Vybere všechny prvky odpovídající selektoru uvedenému vpravo, které
+            jsou potomkem (na jakékoli úrovni) prvku uvedeného vlevo.
+          </h4>
+          <pre><code > 
+    div p { background-color: yellow; } 
+          </code></pre>
+        </header>
+        <!-- SELEKTOR TYPU POTOMEK -->
+
+        <article>
+          <p>
+            Paragraph. To without multiply creeping two days created. Him let
+            second us doesn't yielding land place. Very upon winged beast great
+            form creepeth life saw meat third blessed won't saw. Appear days had
+            moveth divided were open moveth. Day rule. Wherein.
+          </p>
+          <div>
+            <p>
+              Paragraph in a div. Earth day first in winged divided earth
+              multiply bearing. Together thing upon gathering said. Of kind. Dry
+              over dominion had behold. Lesser dry us first female lights good.
+            </p>
+            <blockquote>
+              <p>
+                Their grass greater gathering. In a from multiply herb hath
+                together beginning. Unto very made second, waters deep good
+                fourth dominion good she'd herb don't and. Days midst the he
+                you're dry two dry image. Them. Form to a, replenish.
+              </p>
+            </blockquote>
+          </div>
+        </article>
+      </section>
+      <section>
+        <header>
+          <h2>Selektor typu přímý potomek</h2>
+          <h4>
+            Vybere všechny prvky odpovídající selektoru uvedenému vpravo, které
+            jsou přímým potomkem prvku uvedeného vlevo.
+          </h4>
+          <pre><code > 
+    div > p { background-color: green; } 
+          </code></pre>
+        </header>
+        <!-- SELEKTOR TYPU PRIMY POTOMEK -->
+
+        <article>
+          <p>
+            Paragraph. To without multiply creeping two days created. Him let
+            second us doesn't yielding land place. Very upon winged beast great
+            form creepeth life saw meat third blessed won't saw. Appear days had
+            moveth divided were open moveth. Day rule. Wherein.
+          </p>
+          <div>
+            <p>
+              Paragraph in a div. Earth day first in winged divided earth
+              multiply bearing. Together thing upon gathering said. Of kind. Dry
+              over dominion had behold. Lesser dry us first female lights good.
+            </p>
+            <blockquote>
+              <p>
+                Their grass greater gathering. In a from multiply herb hath
+                together beginning. Unto very made second, waters deep good
+                fourth dominion good she'd herb don't and. Days midst the he
+                you're dry two dry image. Them. Form to a, replenish.
+              </p>
+            </blockquote>
+          </div>
+        </article>
+      </section>
+      <h1>Pseudoclasses</h1>
+      <section>
+        <header>
+          <h2>:link, :visited, :hover, :active</h2>
+          <h4>Stylujeme element v určitém stavu</h4>
+          <pre><code > 
+    a:hover { background-color: cyan; }  
+          </code></pre>
+        </header>
+        <!-- PSEUDOTRIDY -->
+        <article class="pseudoclasses">
+          <p>
+            Replenish let that, greater waters void likeness set, made forth air
+            so gathering creepeth they're green seas. So open.Under. Created.
+            Night darkness.
+          </p>
+          <a href="https://kodim.cz/czechitas/daweb" target="_blank">
+            Link to a web
+          </a>
+        </article>
+      </section>
+      <section>
+        <header>
+          <h2>Selektor typu n-tý potomek</h2>
+          <h4>Vybere všechny prvky, které jsou n-tým potomkem svého rodiče</h4>
+          <pre>
+            <code >
+    p:nth-child(n) { background-color: hotpink; }
+            </code>
+          </pre>
+        </header>
+        <!-- NTH CHILD -->
+        <article>
+          <p>
+            1. Earth day first in winged divided earth multiply bearing.
+            Together thing upon gathering said. Of kind. Dry over dominion had
+            behold. Lesser dry us first female lights good.
+          </p>
+          <div>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis,
+            doloribus.
+          </div>
+          <p>
+            2. Seasons fifth creature. Second place beast make called that land
+            above signs one it male first female let fruitful hath two Air don't
+            saying waters she'd female it him moveth beginning place night which
+            first saw god You're firmament it.
+          </p>
+          <p>
+            3. Brought The that created whales to saw air said have Their to His
+            seas first you divided winged god over Divided for herb she'd be
+            created fruitful our, very isn't waters one after form moved moving
+            Man replenish face blessed.
+          </p>
+          <p>
+            4. Their grass greater gathering. In a from multiply herb hath
+            together beginning. Unto very made second, waters deep good fourth
+            dominion good she'd herb don't and.
+          </p>
+          <p>
+            5. Days midst the he you're dry two dry image. Them. Form to a,
+            replenish.To without multiply creeping two days created. Him let
+            second us doesn't yielding land place.
+          </p>
+        </article>
+      </section>
+      <section>
+        <header>
+          <h2>Selektor typu n-tý potomek</h2>
+          <h4>Další použití:</h4>
+          <pre>
+            <code >
+    p:nth-child(2n) { background-color: forestgreen; }
+
+    p:nth-child(3n + 1) { background-color: aquamarine; }
+    p:nth-child(3n + 2) { background-color: gold; }
+    p:nth-child(3n + 3) { background-color: fuchsia; }
+            </code>
+          </pre>
+        </header>
+        <article>
+          <p>
+            1. Earth day first in winged divided earth multiply bearing.
+            Together thing upon gathering said. Of kind. Dry over dominion had
+            behold. Lesser dry us first female lights good.
+          </p>
+          <p>
+            2. Seasons fifth creature. Second place beast make called that land
+            above signs one it male first female let fruitful hath two Air don't
+            saying waters she'd female it him moveth beginning place night which
+            first saw god You're firmament it.
+          </p>
+          <p>
+            3. Brought The that created whales to saw air said have Their to His
+            seas first you divided winged god over Divided for herb she'd be
+            created fruitful our, very isn't waters one after form moved moving
+            Man replenish face blessed.
+          </p>
+          <p>
+            4. Their grass greater gathering. In a from multiply herb hath
+            together beginning. Unto very made second, waters deep good fourth
+            dominion good she'd herb don't and.
+          </p>
+          <p>
+            5. Days midst the he you're dry two dry image. Them. Form to a,
+            replenish.To without multiply creeping two days created. Him let
+            second us doesn't yielding land place.
+          </p>
+          <p>
+            6.Fly upon subdue divided over rule be stars. Good morning saw
+            whales days whose fly grass in land. Very great all divide the
+            you're, own that man can't years be.
+          </p>
+          <p>
+            7. Abundantly divide moving. Seed after fowl don't fourth, had under
+            abundantly darkness let place. Fish said give forth, all dry. In
+            evening which two seed heaven won't had give moved was face.
+          </p>
+          <p>
+            8. Man was their called. Form multiply beast man Isn't. Days. Can't.
+            One won't Gathering. It waters don't fourth. Fruitful. Great you. A
+            be yielding give own after blessed own was saying days unto had tree
+            brought moveth seas gathered image you'll were whose.
+          </p>
+        </article>
+      </section>
+      <h1>Další selektory:</h1>
+      <section>
+        <header class="checkout-also">
+          <h2>Sourozenec</h2>
+          <pre><code > div ~ p { background: lightblue; } </code></pre>
+          <br />
+          <h2>Přímý sourozenec</h2>
+          <pre><code > div + p { background: tomato; } </code></pre>
+          <br />
+          <h2>:nth-of-type() selektor</h2>
+          <pre><code > p:nth-of-type(2) { background: red; } </code></pre>
+          <br />
+          <h2>:first-of-type selektor</h2>
+          <pre><code > p:first-of-type { background: coral; } </code></pre>
+          <br />
+          <h2>:last-of-type selektor</h2>
+          <pre><code > p:last-of-type { background: cyan; } </code></pre>
+          <br />
+          <h2>:only-of-type selektor</h2>
+          <pre><code > p:only-of-type { background: cornflowerblue; }
+            </code></pre>
+          <br />
+          <h2>:not() selektor</h2>
+          <pre><code > div:not(.blogpost) { background: darkorange; }
+            </code></pre>
+        </header>
+      </section>
+    </main>
+  </body>
+</html>

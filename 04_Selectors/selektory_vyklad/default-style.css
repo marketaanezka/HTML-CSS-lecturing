@@ -14,6 +14,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 42px;
   margin: 0;
+  margin-bottom: 2rem;
   padding: 16px 0;
   border-bottom: 1px solid #2c3e66;
   text-align: center;
@@ -27,15 +28,13 @@ main {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  margin: 0 120px;
-}
-h1 {
-  align-self: flex-start;
+  margin: 0 15px;
 }
 section {
   border-radius: 15px;
   box-shadow: 0 0 15px #5a5a6b6b;
   margin-bottom: 120px;
+  min-width: 550px;
 }
 
 header {
@@ -59,14 +58,19 @@ article {
   padding: 16px;
   background-color: #f9f9f9;
   border-radius: 0 0 15px 15px;
+  min-height: 65vh;
 }
 
 div {
-  background-color: #f5f5fd;
+  background-color: #e1e1fb;
   border: 1px solid #dedef5;
   border-radius: 5px;
   padding: 10px;
   margin: 10px 0;
+}
+
+blockquote {
+  border: 1px solid #6767b1;
 }
 
 .pseudoclasses button {
