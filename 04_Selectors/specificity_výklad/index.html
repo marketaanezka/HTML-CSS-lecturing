@@ -3,92 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS specificity</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./default-style.css" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Specificity</title>
   </head>
   <body>
-    <h1 class="lesson-title">CSS specificity</h1>
-    <main>
-      <h1>Specificity hierarchy</h1>
-      <section>
-        <header>
-          <h2>Element < Class < Id < Inline style</h2>
-          <pre><code>
-div { background-color: lightgreen; }
-.blogpost { background-color: lightblue; }
-#new { background-color: lightsalmon; }
-&lt;div style="color:lightyellow;&gt;content&lt;div&gt
-            </code></pre>
-        </header>
-        <article>
-          <div class="blogpost" id="new">
-            <h4>New !</h4>
-            <h3>Whales in grass</h3>
-            <p>
-              Fly upon subdue divided over rule be stars. Good morning saw
-              whales days whose fly grass in land. Very great all divide the
-              you're, own that man can't years be. Land were, morning there seas
-              i a make life shall called Open moveth over us every subdue every
-              stars seasons together form don't fifth you were created appear
-              whose, their.
-            </p>
-          </div>
-          <div>
-            <h3>Third waters</h3>
-            <p>
-              Just div. Evening his. From won't you're signs. Were made cattle
-              open given. Likeness. Fifth waters. Green isn't fifth air
-              multiply. Hath make beginning divide grass you our upon third our.
-              Multiply isn't created great, which. It divided. Fill. Seasons
-              night face. Don't face abundantly created make be under third
-              together.
-            </p>
-          </div>
-          <div class="blogpost saved">
-            <span>Saved</span>
-            <h3>Men gathering</h3>
-            <p>
-              Man was their called. Form multiply beast man Isn't. Days. Can't.
-              One won't Gathering. It waters don't fourth. Fruitful. Great you.
-              A be yielding give own after blessed own was saying days unto had
-              tree brought moveth seas gathered image you'll were whose. Without
-              it doesn't stars greater had Made. Darkness form us created set
-              creature winged winged fish thing.
-            </p>
-          </div>
-        </article>
-      </section>
-      <h1>Specificity calculation</h1>
-      <section>
-        <header>
-          <h2>Each selector has its specificity</h2>
-          <pre>
-            <code>
-div - 1
-.blogpost - 10
-#new - 100
-style="color:lightyellow - 1000
-!important
-            </code>
-          </pre>
-        </header>
-        <article>
-          <img src="./img/specific.png" alt="specificity" />
-          <hr />
-          <img src="./img/specificity.jpg" alt="specificity" />
-        </article>
-      </section>
-    </main>
+    <h1>Nadpis</h1>
+    <p>
+      Když se to narodilo, bylo to jenom takové bílé nic, do hrsti se to vešlo;
+      ale anžto to mělo pár černých ušisek a vzadu ocásek, uznali jsme, že to je
+      psisko, a protože jsme si přáli mít psí holčičku, dali jsme tomu jméno
+      Dášeňka.
+    </p>
   </body>
 </html>
