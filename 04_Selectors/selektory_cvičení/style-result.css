@@ -48,28 +48,21 @@ body {
   width: 30px;
 }
 
-/*  PRO TOTO STYLOVÁNÍ NEPOUŽÍVEJ TŘÍDY
-1. každé druhé sekci dej bílé pozadí */
+/* Každé druhé sekci přidej bílé pozadí */
 section:nth-child(2n) {
   background-color: white;
 }
 
-/*2. fotografii přidej 3px silný rámeček barvy lightblue (dej pozor, aby se rámeček nepřidal i ikonám)*/
+/*Fotografii přidej 3px silný rámeček barvy lightblue. Dej pozor, aby se rámeček nepřidal i ikonám.*/
 section > img {
   border: 3px solid lightblue;
 }
 
-/*PRO TOTO STYLOVÁNÍ POUŽIJ TŘÍDY
-nastyluj ikonu call a message  tak, aby se při najetí myši zvětšila. 
-Použij pro to vlastnost a hodnotu
-transform: scale(1.3);
-Nastav kurzor na pointer/ručičku (vlasnost cursor)
-BONUS: 
-Pro plynulé zvětšení si můžeš najít použití vlastnosti transition. 
-*/
-
-.call:hover,
-.message:hover {
+/*Nastyluj ikony, tak aby se při najetí myši:
+ikonka zvětšila. Použij pro to vlasnost a hodnotu transform: scale(1.3);
+kurzor změnil na pointer/ručičku (vlasnost cursor)
+Dej pozor, aby se nezvětšovala i fotografie. */
+div img:hover {
   transform: scale(1.3);
   cursor: pointer;
   transition: 0.2s ease-in-out;

@@ -1,0 +1,38 @@
+/* div,
+p {
+  background-color: turquoise;
+} */
+
+/* p.article {
+  color: green;
+} */
+
+/* div p {
+  background-color: tomato;
+} */
+
+/* div > p {
+  background-color: palevioletred;
+} */
+
+/* a:hover {
+  background-color: hotpink;
+} */
+
+/* p:nth-child(2) {
+  background-color: pink;
+} */
+/* 
+p:nth-child(2n) {
+  background-color: green;
+} */
+
+/* p:nth-child(3n + 1) {
+  background-color: aquamarine;
+}
+p:nth-child(3n + 2) {
+  background-color: gold;
+}
+p:nth-child(3n + 3) {
+  background-color: fuchsia;
+} */

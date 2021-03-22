@@ -1,17 +1,11 @@
 .card {
   width: 350px;
   padding: 20px;
-  color: #071c55
-;
+  color: #071c55;
   background-color: #e7ffec;
   border: 2px solid #bed3c3;
   border-radius: 20px;
-  box-shadow: 0 0 15px #9fa1a0
-  ;
-}
-.card--dark {
-  background-color: #014128;
-  color: #f9f9f9;
+  box-shadow: 0 0 15px #9fa1a0;
 }
 .card__content {
   font-family: monospace;
@@ -20,8 +14,7 @@
 
 .card__btn {
   width: 200px;
-  color: #071c55
-;
+  color: #071c55;
   background-color: rgb(253, 131, 131);
   border-radius: 15px;
   text-transform: uppercase;
@@ -34,4 +27,9 @@
 .card__btn--small {
   width: 100px;
   font-size: 1rem;
+}
+
+.card--dark {
+  background-color: #014128;
+  color: #f9f9f9;
 }

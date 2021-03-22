@@ -12,9 +12,9 @@ h1 {
 }
 
 #unique-box {
-  border: 3px solid blueviolet;
+  border: 3px solid blue;
 }
 
 p:hover {
-  background-color: cadetblue;
+  background-color: yellow;
 }

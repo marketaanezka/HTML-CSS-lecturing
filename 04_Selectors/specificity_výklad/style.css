@@ -1,3 +1,19 @@
+.hlavni {
+  color: blue;
+}
+
+h1 {
+  color: purple;
+}
+
+h1 {
+  color: lime;
+}
+
+h1.hlavni {
+  color: hotpink;
+}
+
 h1 {
   color: red !important;
 }
