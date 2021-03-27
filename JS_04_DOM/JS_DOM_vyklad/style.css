@@ -1,0 +1,31 @@
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.btn {
+  display: block;
+  margin-bottom: 2rem;
+  width: 100px;
+  border-radius: 15px;
+  padding: 5px;
+  font-family: monospace;
+  font-size: large;
+}
+
+.btn-primary {
+  background-color: #90ee90;
+  border: 2px solid #0b3f0b;
+  color: #0b3f0b;
+}
+
+.btn-off {
+  background-color: #cecece;
+  border: 2px solid #747474;
+  color: #747474;
+}

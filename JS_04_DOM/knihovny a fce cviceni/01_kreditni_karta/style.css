@@ -1,0 +1,13 @@
+.msg {
+  padding: 1rem;
+  border: 1px solid #658995;
+  border-radius: 40px;
+}
+
+.msg--invalid {
+  background-color: #f89689;
+}
+
+.msg--valid {
+  background-color: #42e99b;
+}

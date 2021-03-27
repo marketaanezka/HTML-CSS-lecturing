@@ -1,0 +1,116 @@
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #062b48;
+  background-color: #f5f9fb;
+}
+
+.lesson-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 42px;
+  margin: 0;
+  padding: 16px 0;
+  border-bottom: 1px solid #062b48;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 0 80px;
+}
+h1 {
+  align-self: flex-start;
+}
+section {
+  border-radius: 15px;
+  box-shadow: 0 0 15px #5a5a6b6b;
+  margin-bottom: 40vh;
+  max-width: 750px;
+}
+
+header {
+  padding: 16px;
+  background-color: #f7e689;
+  color: #373a30;
+  border-radius: 15px;
+}
+
+h2 {
+  margin-top: 8px;
+  letter-spacing: 0.7px;
+  text-align: center;
+}
+
+pre {
+  align-self: flex-start;
+}
+code {
+  font-size: 18px;
+  padding: 5px 10px;
+}
+
+article {
+  padding: 16px;
+  background-color: #f9f9f9;
+  border-radius: 0 0 15px 15px;
+  min-height: 20vh;
+}
+
+div {
+  background-color: #cddceb;
+  border: 1px solid #dedef5;
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 24px;
+}
+
+/*-----------------*/
+.dom-element {
+  margin-bottom: 50px;
+}
+.changing-dom {
+  margin-top: 40vh;
+}
+.header {
+  position: sticky;
+  top: 400px;
+}
+
+/* ---------- */
+.btn {
+  background-color: #cddceb;
+  font-size: 18px;
+  border-radius: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #e7624b;
+  color: #f9f9f9;
+  font-size: 24px;
+  width: 150px;
+}
+
+.pet {
+  width: 100%;
+}
+
+.new-header {
+  background-color: hotpink;
+}
+
+.blue-header-text {
+  color: darkblue;
+}
