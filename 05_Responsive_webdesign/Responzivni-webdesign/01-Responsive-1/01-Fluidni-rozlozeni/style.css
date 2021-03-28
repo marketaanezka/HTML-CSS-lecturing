@@ -1,0 +1,57 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+*, :after, :before { box-sizing: border-box; }
+
+/* spolecne */
+body {
+	font: 16px/1.5 sans-serif;
+	margin: 0;
+}
+
+.hlavicka,
+.menu,
+.obsah,
+.reklama,
+.paticka {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-size: 18px;
+}
+
+.hlavicka,
+.paticka {
+	height: 15vh;
+}
+
+.menu,
+.obsah {
+	height: 70vh;
+}
+
+/* --------------------- */
+
+.kontejner {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.hlavicka {
+	background-color: #2ecc71;
+	flex: 0 0 100%;
+}
+
+.menu {
+	background-color: #e74c3c;
+	flex: 0 0 30%;
+}
+
+.obsah {
+	background-color: #f1c40f;
+	flex: 0 0 70%;
+}
+
+.paticka {
+	background-color: #3498db;
+	flex: 0 0 100%;
+}

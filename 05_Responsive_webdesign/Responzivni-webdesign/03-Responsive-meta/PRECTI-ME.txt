@@ -1,0 +1,14 @@
+Responzivní meta tagy
+
+1. Nejprve se podívej na vysvětlení ve videu
+
+2. Na kód se podívej ve složce 01-Ukazka
+
+3. Vyzkoušej si, jak to vypadá přímo na mobilu.
+   Bež na telefonu na obě tyto adresy a podívej se na rozdíl:
+
+Bez responzivního meta tagu:
+https://meta.itgirls.cz/predtim
+
+Se zapnutým responzivním meta tagem:
+https://meta.itgirls.cz/potom

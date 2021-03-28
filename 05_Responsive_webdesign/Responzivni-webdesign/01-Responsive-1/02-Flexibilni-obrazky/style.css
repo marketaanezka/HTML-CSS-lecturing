@@ -1,0 +1,51 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+/* spolecne */
+body {
+  font: 16px/1.5 sans-serif;
+  padding: 0 30px 30px 30px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.mobil {
+  width: 50%;
+  padding: 30px 20px 80px 20px;
+  margin: 0 auto;
+  border: 3px solid black;
+  background-color: tomato;
+  border-radius: 10px;
+  position: relative;
+}
+
+.mobil::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  bottom: 10px;
+  left: calc(50% - 30px);
+  background-color: black;
+}
+
+.screen {
+  border: 3px solid black;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: white;
+}
+
+/* ---------------------------------------------------------- */
+
+.obrazek {
+  width: 200px;
+  max-width: 100%;
+}

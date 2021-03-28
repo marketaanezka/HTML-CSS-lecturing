@@ -1,0 +1,35 @@
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+body {
+	margin: 20px;
+	font: 16px/1.5 sans-serif ;
+}
+
+img {
+	max-width: 100%;
+}
+
+.predtim {
+	color: red;
+}
+
+.potom {
+	color: green;
+}
+
+/* ------------------------- */
+
+
+@media (min-width: 980px) {
+
+	.sloupce {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.sloupce p {
+		flex: 0 1 calc((100% - 30px) / 2);
+	}
+}
