@@ -1,18 +1,24 @@
 /* intuitivni box-sizing */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
 
 body {
-	font: 16px/1.5 sans-serif;
+  font: 16px/1.5 sans-serif;
 }
 
 .obdelnik {
-		display: block;
-		margin-bottom: 20px;
-		padding: 30px 30px;
-		font-size: 24px;
-		text-align: center;
-		border: 3px solid black;
+  display: block;
+  margin-bottom: 20px;
+  padding: 30px 30px;
+  font-size: 24px;
+  text-align: center;
+  border: 3px solid black;
 }
 
 /*
@@ -23,4 +29,3 @@ body {
 	zelená		#2ecc71
 	červená		#e74c3c
 */
-

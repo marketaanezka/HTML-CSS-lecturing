@@ -1,13 +1,19 @@
 /* intuitivni box-sizing */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
 
 body {
-	font: 16px/1.5 sans-serif;
+  font: 16px/1.5 sans-serif;
 }
 
 img {
-	display: block;
+  display: block;
 }
 
 /*
