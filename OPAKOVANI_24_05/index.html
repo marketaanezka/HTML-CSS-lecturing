@@ -6,82 +6,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header">
-      <nav>hamburger</nav>
+      <nav class="social-media">
+        <a href=""
+          ><img class="icon" src="img/icons/messenger.svg" alt="messenger"
+        /></a>
+        <a href=""
+          ><img class="icon" src="img/icons/linkedin.svg" alt="linkedin"
+        /></a>
+        <a href=""
+          ><img class="icon" src="img/icons/youtube.svg" alt="youtube"
+        /></a>
+        <a href=""
+          ><img class="icon" src="img/icons/instagram.svg" alt="instagram"
+        /></a>
+        <a href=""
+          ><img class="icon" src="img/icons/github.svg" alt="github"
+        /></a>
+      </nav>
       <img class="avatar" src="img/avatar.jpg" alt="profile photo" />
     </header>
     <main>
-      <article class="card card--md upcoming">
+      <article class="card card--md">
         <h2 class="card__title">Upcoming</h2>
         <div class="card__content">
-          <div class="card__left">16:30</div>
-          <div class="card__right">Interview Barclays</div>
-        </div>
-      </article>
-      <article class="card card--md quote">
-        <h2 class="card__title">Quote of the day</h2>
-        <div class="card__content">
-          <div class="card__left">Cory House</div>
-          <div class="card__right">
-            <q> Code is like humor. When you have to explain it, it’s bad. </q>
+          <div class="upcoming">
+            <div class="events">
+              <div class="event">
+                <div class="event__time">16:30</div>
+                <div class="event__description">Interview Barclays</div>
+              </div>
+              <div class="event">
+                <div class="event__time">19:00</div>
+                <div class="event__description">Dinner with Alex</div>
+              </div>
+            </div>
+            <button class="reminder">Remind me</button>
           </div>
         </div>
       </article>
-      <article class="card card--lg photos">
+      <article class="card card--md">
+        <h2 class="card__title">Quote of the day</h2>
+        <div class="card__content">
+          <div class="quote">
+            <p class="quote__author">Cory House</p>
+            <q class="quote__text">
+              Code is like humor. When you have to explain it, it’s bad.
+            </q>
+          </div>
+        </div>
+      </article>
+      <article class="card card--lg">
         <h2 class="card__title">Recent photos</h2>
         <div class="card__content">
-          <img class="recent-photo" src="img/recent/urban2.jpg" alt="food">
-          <img class="recent-photo" src="img/recent/friends1.jpg" alt="food">
-          <img class="recent-photo" src="img/recent/trip1.jpg" alt="food">
-          <img class="recent-photo" src="img/recent/friends3.jpg" alt="food">
-          <img class="recent-photo" src="img/recent/friends2.jpg" alt="food">
-          <img class="recent-photo" src="img/recent/urban1.jpg" alt="food">
-          <img class="recent-photo" src="img/recent/food1.jpg" alt="food">
-          <img class="recent-photo" src="img/recent/food2.jpg" alt="food">
-          <img class="recent-photo" src="img/recent/trip2.jpg" alt="food">
+          <div class="photos">
+            <img class="recent-photo" src="img/recent/urban2.jpg" alt="food" />
+            <img
+              class="recent-photo"
+              src="img/recent/friends1.jpg"
+              alt="food"
+            />
+            <img class="recent-photo" src="img/recent/trip1.jpg" alt="food" />
+            <img
+              class="recent-photo"
+              src="img/recent/friends3.jpg"
+              alt="food"
+            />
+            <img
+              class="recent-photo"
+              src="img/recent/friends2.jpg"
+              alt="food"
+            />
+            <img class="recent-photo" src="img/recent/urban1.jpg" alt="food" />
+            <img class="recent-photo" src="img/recent/food1.jpg" alt="food" />
+            <img class="recent-photo" src="img/recent/food2.jpg" alt="food" />
+            <img class="recent-photo" src="img/recent/trip2.jpg" alt="food" />
+          </div>
         </div>
       </article>
       <section class="extras">
-      <article class="card card--sm music">
-        <h2 class="card__title">Music</h2>
-        <div class="card__content">
-          <div class="card__left">
-            <img class="icon" src="img/icons/play-button.svg" alt="play button" />
+        <article class="card card--sm">
+          <h2 class="card__title">Music</h2>
+          <div class="card__content">
+            <div class="music">
+              <div class="music__icon">
+                <img
+                  class="icon"
+                  src="img/icons/play-button.svg"
+                  alt="play button"
+                />
+              </div>
+              <span>Debussy:<strong>&nbsp;Claire de Lune</strong></span>
+            </div>
           </div>
-          <div class="card__right">
-            Debussy:<strong>&nbsp;Claire de Lune</strong>
+        </article>
+        <article class="card card--sm">
+          <h2 class="card__title">Stepcounter</h2>
+          <div class="card__content">
+            <div class="stepcounter">
+              <div class="stepcounter__icon">
+                <img class="icon" src="img/icons/steps.svg" alt="steps" />
+              </div>
+              <span>8.650</span>
+            </div>
           </div>
-        </div>
-      </article>
-        <article class="card card--sm stepcounter">
-        <h2 class="card__title">Stepcounter</h2>
-        <div class="card__content">
-          <div class="card__left">
-            <img class="icon" src="img/icons/steps.svg" alt="steps" />
+        </article>
+        <article class="card card--md card--wide">
+          <h2 class="card__title">Calendar</h2>
+          <div class="card__content">
+            <div class="calendar">
+              <div class="date date--current">
+                <p class="date__day">MO</p>
+                <p class="date__number">12</p>
+              </div>
+              <div class="date">
+                <p class="date__day">TU</p>
+                <p class="date__number">13</p>
+              </div>
+              <div class="date">
+                <p class="date__day">WE</p>
+                <p class="date__number">14</p>
+              </div>
+              <div class="date">
+                <p class="date__day">TH</p>
+                <p class="date__number">15</p>
+              </div>
+              <div class="date">
+                <p class="date__day">FR</p>
+                <p class="date__number">16</p>
+              </div>
+              <div class="date">
+                <p class="date__day">SA</p>
+                <p class="date__number">17</p>
+              </div>
+              <div class="date">
+                <p class="date__day">SU</p>
+                <p class="date__number">18</p>
+              </div>
+            </div>
           </div>
-          <div class="card__right">
-            8.690</strong>
-          </div>
-        </div>
-      </article>
-      <article class="card card--md card--wide calendar">
-        <h2 class="card__title">Calendar</h2>
-        <div class="card__content">
-          <div class="date date--current">MO</div>
-          <div class="date">TU</div>
-          <div class="date">WE</div>
-          <div class="date">TH</div>
-          <div class="date">FR</div>
-          <div class="date">SA</div>
-          <div class="date">SU</div>
-        </div>
-      </article>
+        </article>
       </section>
-      
     </main>
   </body>
 </html>
