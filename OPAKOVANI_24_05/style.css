@@ -151,6 +151,19 @@ body {
   height: 90%;
   background-color: #f3f1fc;
   border-radius: 5px;
+
+  position: relative;
+}
+
+.date__busy {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 5px solid #e635ab;
+
+  position: absolute;
+  top: 5px;
+  right: calc(50% - 5px);
 }
 
 .date__number {
