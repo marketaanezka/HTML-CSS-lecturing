@@ -9,7 +9,7 @@ body {
   background: linear-gradient(127deg, #ffdefb, #f2f0ff, #fffaeb);
 }
 .header {
-  padding: 10px;
+  padding: 15px;
   display: flex;
   justify-content: space-between;
 }
@@ -17,7 +17,7 @@ body {
 .social-media {
   width: 60%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -32,8 +32,15 @@ body {
   border-radius: 50%;
 }
 
+.dashboard {
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .card {
-  margin: 10px;
+  margin-bottom: 15px;
   padding: 12px;
   background-color: white;
   border: 2px solid #ffd4dbc9;
@@ -46,7 +53,8 @@ body {
   display: flex;
 }
 
-.card--md {
+.card--md,
+.card--wide {
   height: 170px;
 }
 
@@ -117,7 +125,10 @@ body {
 .recent-photo {
   margin: 10px;
   border-radius: 5px;
-  width: 150px;
+  width: auto;
+  max-width: 150px;
+  height: auto;
+  max-height: 200px;
 }
 
 .music,
@@ -136,16 +147,16 @@ body {
 .calendar {
   height: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 
 .date {
-  width: 35px;
+  width: 10%;
 
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 
   height: 90%;
@@ -166,10 +177,98 @@ body {
   right: calc(50% - 5px);
 }
 
+.date__day {
+  margin-bottom: 5px;
+}
+
 .date__number {
   font-weight: 700;
 }
 
 .date--current {
   background-color: #d9d6fa;
+}
+
+.news {
+  padding: 0 15px;
+}
+
+.newsletter__article {
+  border: 1.5px solid #e99afb;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.newsletter__image {
+  width: 200px;
+  border-radius: 5px;
+  display: none;
+}
+
+.newsletter__text > * {
+  margin-bottom: 10px;
+}
+
+/* ------------------------------- */
+
+.card,
+.extras,
+.card__wide {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .social-media {
+    width: 40%;
+  }
+
+  .card--md,
+  .card--sm {
+    width: 49%;
+  }
+
+  .newsletter__image {
+    display: block;
+    margin-right: 20px;
+  }
+
+  .newsletter__article {
+    display: flex;
+  }
+}
+
+@media (min-width: 992px) {
+  .social-media {
+    width: 30%;
+  }
+
+  .newsletter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .newsletter__article {
+    width: 49%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .social-media {
+    width: 25%;
+  }
+
+  .card--wide {
+    order: -1;
+  }
+
+  .card--wide,
+  .card--md {
+    width: 32%;
+  }
+
+  .newsletter__article {
+    width: 32%;
+  }
 }
